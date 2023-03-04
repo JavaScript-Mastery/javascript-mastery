@@ -154,6 +154,6 @@ In this example, `sum` is the result of adding `a` and `b`, `difference` is the 
 That covers the basics of Day 1's concepts in JavaScript. 
 Try practicing these concepts with some simple exercises to get comfortable with the language.
 
-Now Go to practicals [index.js](https://github.com/JavaScript-Mastery/javascript-mastery/blob/main/Day-1/index.js)
+Now Go to practicals [index.js](https://github.com/JavaScript-Mastery/javascript-mastery/blob/main/index.js)
 
 
