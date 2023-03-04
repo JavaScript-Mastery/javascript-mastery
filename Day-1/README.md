@@ -115,7 +115,7 @@ Here's an example of how to declare a variable:
 let name = "Ajay";
 ```
 
-This declares a variable named `name` and initializes it with the value "John". 
+This declares a variable named `name` and initializes it with the value "Ajay". 
 The `let` keyword is used to declare a variable in JavaScript.
 
 JavaScript supports several data types, including strings, numbers, booleans, and objects. Here are some examples:
@@ -124,7 +124,7 @@ JavaScript supports several data types, including strings, numbers, booleans, an
 let message = "Hello";
 let age = 22;
 let isStudent = true;
-let person = { name: "Ajayu", age: 22 };
+let person = { name: "Ajay", age: 22 };
 ```
 
 In this example, `message` is a string, `age` is a number, `isStudent` is a boolean, and `person` is an object.
