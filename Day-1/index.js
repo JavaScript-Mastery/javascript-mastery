@@ -69,3 +69,52 @@
 // x = 10;
 // console.log(x); //5
 //=====================================
+// For:  var
+//=====================================
+// function myFunction() {
+//   var x = 10;
+//   if (true) {
+//     var x = 20;
+//     console.log(x); // Output: 20
+//   }
+//   console.log(x); // Output: 20
+// }
+// myFunction();
+
+//=====================================
+// For:  let
+//=====================================
+// function myFunction() {
+//   let x = 10;
+//   if (true) {
+//     let x = 20;
+//     console.log(x); // Output: 20
+//   }
+//   console.log(x); // Output: 10
+// }
+// myFunction();
+//=====================================
+// For:  var
+//=====================================
+// function myFunction() {
+//   const x = 10;
+//   if (true) {
+//     const x = 20;
+//     console.log(x); // Output: 20
+//   }
+//   console.log(x); // Output: 10
+// }
+// myFunction();
+
+//=======================
+// let vs const
+//=======================
+// let x = 10;
+// x = 20;
+// console.log(x); // Output: 20
+
+// const y = 10;
+// y = 20; // Throws an error
+// console.log(y);
+
+// ==== Thanks You & If you have any Query then ask me in Discuse ===========
