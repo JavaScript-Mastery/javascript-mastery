@@ -97,3 +97,7 @@ We can also include a `default` case, which is executed if none of the other cas
 Understanding these concepts is essential to writing efficient and effective code in JavaScript.****
 
 <h3 align="center">If my content is useful then give me star 🌟 on this repo.<h3>
+   
+   
+<div align="center">Made with ❤️ by <a href="https://github.com/Ajay-Dhangar" target="_blank">Ajay-Dhangar</a></div>
+
