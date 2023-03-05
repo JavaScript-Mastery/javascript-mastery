@@ -154,6 +154,123 @@ In this example, `sum` is the result of adding `a` and `b`, `difference` is the 
 That covers the basics of Day 1's concepts in JavaScript. 
 Try practicing these concepts with some simple exercises to get comfortable with the language.
 
+## Data Types and Operators
+
+### JavaScript has several built-in data types, including:
+
+1. **Number:** This data type represents numeric values, both integers and floating-point numbers. 
+
+   Here's an example:
+   
+   ```javascript
+      let x = 10;
+      let y = 3.14;
+   ```
+   
+2. **String:** This data type represents text values, enclosed in single or double quotes. 
+
+   Here's an example:
+   
+   ```javascript
+      let name = 'Ajay';
+      let message = "Hello, world!";
+   ```
+   
+3. **Boolean:** This data type represents a logical value of true or false. 
+
+   Here's an example:
+   
+   ```Javascript 
+      let isRunning = true;
+      let isLoggedIn = false;
+   ```
+   
+4. **Undefined:** This data type represents a variable that has been declared but has no value assigned to it. 
+
+   Here's an example:
+   
+   ```JavaScript 
+      let x;
+      console.log(x); // Output: undefined
+   ```
+   
+   
+5. **Null:** This data type represents a variable that has been explicitly assigned the value null. 
+
+   Here's an example:
+   
+   ```JavaScript 
+      let x = null;
+      console.log(x); // Output: null
+   ```
+   
+### JavaScript also has several operators, including:
+
+1. **Arithmetic operators:** These operators perform mathematical calculations.
+
+   Here's an example:
+   
+   ```Javascript 
+      let x = 10;
+      let y = 3;
+      console.log(x + y); // Output: 13
+      console.log(x - y); // Output: 7
+      console.log(x * y); // Output: 30
+      console.log(x / y); // Output: 3.3333333333333335
+      console.log(x % y); // Output: 1
+   ```
+
+2. **Assignment operators:** These operators assign values to variables. 
+
+   Here's an example:   
+   
+   ```Javascript 
+      let x = 10;
+      x += 5; // Equivalent to x = x + 5
+      console.log(x); // Output: 15
+   ```
+   
+3. **Comparison operators:** These operators compare two values and return a Boolean value of true or false. 
+
+   Here's an example:
+   
+   ```JavaScript 
+      let x = 10;
+      let y = 5;
+      console.log(x > y); // Output: true
+      console.log(x < y); // Output: false
+      console.log(x >= y); // Output: true
+      console.log(x <= y); // Output: false
+      console.log(x === y); // Output: false
+      console.log(x !== y); // Output: true
+   ```   
+   
+4. **Logical operators:** These operators perform logical operations and return a Boolean value of true or false. 
+   
+   Here's an example:
+   
+   ```Javascript 
+      let x = 10;
+      let y = 5;
+      console.log(x > 5 && y < 10); // Output: true
+      console.log(x > 5 || y < 2); // Output: true
+      console.log(!(x > y)); // Output: false
+   ```
+   
+   
+5. **String operators:** These operators concatenate or combine strings. 
+
+   Here's an example:
+   
+   ```JavaScript 
+      let firstName = 'Ajay';
+      let lastName = 'Dhangar';
+      console.log(firstName + ' ' + lastName); // Output: Ajay Dhangar
+   ```
+
+***These are some of the basic data types and operators in JavaScript that you should know to get started with the language.***
+   
+   
 Now Go to practicals [index.js](https://github.com/JavaScript-Mastery/javascript-mastery/blob/main/index.js)
 
 
