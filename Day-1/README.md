@@ -274,3 +274,5 @@ Try practicing these concepts with some simple exercises to get comfortable with
 Now Go to practicals [index.js](https://github.com/JavaScript-Mastery/javascript-mastery/blob/main/index.js)
 
 
+<div align="center">Made with ❤️ by <a href="https://github.com/Ajay-Dhangar" target="_blank">Ajay-Dhangar</a></div>
+
