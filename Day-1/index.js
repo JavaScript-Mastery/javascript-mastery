@@ -1,120 +1,117 @@
-// Get Started Basic of JavaScript Day -1 for introduction
-// Print any name and word/sentence
+// ===================
+// Day-1
+//====================
 
-// console.log("My name is Ajay Dhangar.");
+// =====================================
+//Your first program in JavaScript
+// ======================================
+// console.log("Hello World!");
 
-//=======================
-// Variables
-// ======================
-// Step-1:
+// ================
+// Data Types and Operators
+//===============
+// 1. Number:
 // ===============
-// var Name = "Ajay"; //String
-// let Day = 1; // Intiger
-// const Topic = "Introduction of JavaScript"; // string
+// let n = 10; //integer type
+// let m = 5.78; // float type
+// console.log(n);
+// console.log(m);
+// ===============
+// 2. String:
+// =============
+// let firstName = "Ajay";
+// let lastName = "Dhangar";
+// let fullName = firstName + " " + lastName;
+// console.log("firstName: " + firstName);
+// console.log("lastName: " + lastName);
+// console.log("fullName: " + fullName);
 
-// console.log("Name:" + Name + " " + "Dhangar");
-// console.log("Day:" + Day);
-// console.log("Topic:" + Topic);
+//================
+//3. Boolean:
+//===============
+
+// let x = 5;
+// let y = 10;
+// console.log(x > y); // false
+// console.log(x < y); // true
 
 //======================
-// All Operators
-//======================
+// 4. Undefined
+//===============
+
+// let a; // a is decleared but not assign any value
+// console.log(a); // undefined
+//=======================
+//5. NULL:
+//=======================
+// let x = null;
+// console.log(x); //null
+
+//==========================
+//Jvascript operators
+//========================
+//1. Arithmetic operators: ( +, -, /, *, %)
+//=======================
+
 // let a = 10;
 // let b = 5;
-// let sum = a + b; // 15
-// let difference = a - b; // 5
-// let product = a * b; // 50
-// let quotient = a / b; // 2
-// let isEqual = a === b; // false
-// let isNotEqual = a !== b; // true
-// let isGreater = a > b; // true
-// let isLess = a < b; // false
-// let andOperator = true && false; // false
-// let orOperator = true || false; // true
-// let notOperator = !true; // false
 
-// console.log("a=" + a + " and b=" + b); // a=10 and b=5
-// console.log("sum=" + sum + " and difference=" + difference); // sum=15 and difference=5
-// console.log("product=" + product + " and quotient=" + quotient); // product=50 and quotient=2
-// console.log("isEqual=" + isEqual + " and isNotEqual=" + isNotEqual); // isEqual=false and isNotEqual=true
-// console.log("isGreater=" + isGreater + " | isLess=" + isLess); // isGreater=true | isLess=false
-// console.log("andOperator=" + andOperator + " | orOperator=" + orOperator); // andOperator=false | orOperator=true
-// console.log(notOperator); // false
+// console.log(a + b); // 10+5 = 15
+// console.log(a - b); // 10-5 = 5
+// console.log(a * b); // 10x5 = 50
+// console.log(a / b); // 10/5 = 2
+// console.log(a % b); // 10%5 = 0
+// console.log((a + b) * (a - b)); //(15x5) = 75
 
-// ==================================
+// ======================
+// 2. Assignment operators:
+//=======================
 
-// =================================
+// let a = 5;
+// a += 10; // a = a+10 = 5+10 =15
+// a = a + 3; // 15 + 3 = 18
+// console.log(a); //18
+//
+// ========================
+// 3. Comparison operators:
+//==========================
+// let a = 5;
+// let b = 10;
 
-// let message = "Hello"; // string
-// let age = 22; // integer
-// let isStudent = true; // boolean
-// let person = { name: "Ajay", age: 22 }; // object
-// console.log(message);
-// console.log(age);
-// console.log(isStudent);
-// console.log(person);
+// console.log(a > b); // false
+// console.log(a < b); // true
+// console.log(a == b); // false
+// console.log(a === b); //false
+// console.log(a !== b); //true
+// console.log(a <= b); //true
+// console.log(a >= b); //false
+
+//======================
+// Differents between (a==b) and (a===b)
+//========================
+// let a = 4; // number type
+// let b = "4"; // String Type
+// console.log(a == b); // true: (check only value)
+// console.log(a === b); //false: (But It is check value and data type If both are same then print true otherwise print false)
+//
+//====================
+// 4. Logical operators:
+//====================
+
+// let a = 5;
+// let b = 6;
+// console.log(a < 10 || b > 10); // true (OR Logic)
+// console.log(a < 10 && b > 10); // false (AND Logic)
+// console.log(!(a > b)); // true (NOT Logic)
 
 //====================
-// Difference between let and const
-//===================
-// let x = 5;
-// x = 10;
-// console.log(x); // 10
+// 5. String operators:
+//====================
 
-// const x = 5;
-// x = 10;
-// console.log(x); //TypeError: Assignment to constant variable.
+// let fName = "Ajay";
+// let lName = "Dhangar";
 
-// var x = 5;
-// x = 10;
-// console.log(x); //5
-//=====================================
-// For:  var
-//=====================================
-// function myFunction() {
-//   var x = 10;
-//   if (true) {
-//     var x = 20;
-//     console.log(x); // Output: 20
-//   }
-//   console.log(x); // Output: 20
-// }
-// myFunction();
+// let fullName = fName + " " + lName;
+// console.log(fullName); // Ajay Dhangar
 
-//=====================================
-// For:  let
-//=====================================
-// function myFunction() {
-//   let x = 10;
-//   if (true) {
-//     let x = 20;
-//     console.log(x); // Output: 20
-//   }
-//   console.log(x); // Output: 10
-// }
-// myFunction();
-//=====================================
-// For:  var
-//=====================================
-// function myFunction() {
-//   const x = 10;
-//   if (true) {
-//     const x = 20;
-//     console.log(x); // Output: 20
-//   }
-//   console.log(x); // Output: 10
-// }
-// myFunction();
-
-//=======================
-// let vs const
-//=======================
-// let x = 10;
-// x = 20;
-// console.log(x); // Output: 20
-
-// const y = 10;
-// y = 20; // Throws an error
-// console.log(y);
-
-// ==== Thanks You & If you have any Query then ask me in Discuse ===========
+// Thanks For Reading & watching and Go to Next day
