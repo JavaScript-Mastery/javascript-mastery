@@ -22,8 +22,8 @@
      <tr>
         <td> Day-3 </td>
         <td> Arrays and Loops </td>
-        <td> <a href="#">Preview </a> </td>
-        <td> Pending </td>
+        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Day-3/">Preview </a> </td>
+        <td> Active </td>
      </tr>
      <tr>
         <td> Day-4 </td>
