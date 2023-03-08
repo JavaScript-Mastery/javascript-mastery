@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        p{
+            font-size: 18px;
+            margin: 20px;
+        }
+        pre{
+            font-size: 16px;
+            border: 1px solid red;
+            background-color: rgb(226, 226, 226);
+            padding: 10px;
+            padding-left: 30px;
+            width: 50%;
+            overflow: scroll;
+            margin-left: 10%;
+            color:green;
+        }
+        span{
+            font-weight: bold;
+            color: red;
+        }
+        strong{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+<p>Here's an example code that covers some basic concepts of JavaScript objects and properties:
+</p>
+<pre lang="javascript">
+// Creating an object with properties
+const person = {
+  name: 'John',
+  age: 30,
+  gender: 'male',
+  occupation: 'developer'
+};
+
+// Accessing properties using dot notation
+console.log(person.name); // Output: 'John'
+console.log(person.age); // Output: 30
+
+// Accessing properties using bracket notation
+console.log(person['gender']); // Output: 'male'
+console.log(person['occupation']); // Output: 'developer'
+
+// Adding new properties
+person.email = 'john@example.com';
+
+// Modifying existing properties
+person.age = 31;
+
+// Deleting properties
+delete person.email;
+
+// Checking if a property exists
+console.log('gender' in person); // Output: true
+console.log('email' in person); // Output: false
+
+// Looping through all properties of an object
+for (let key in person) {
+  console.log(key + ': ' + person[key]);
+}
+</pre>
+<p>In this code, we start by creating an object called <span>person</span> with four properties: <span>name</span>, <span>age</span>, <span>gender</span>, and <span>occupation</span>. We can access these properties using dot notation (<strong>person.name</strong>) or bracket notation (<strong>person['gender']</strong>). We can add new properties to an object using dot notation (<strong>person.email = 'john@example.com'</strong>) or modify existing properties using dot notation (<strong>person.age = 31</strong>). We can delete properties using the delete operator (<strong>delete person.email</strong>).
+</p>
+<p>We can check if a property exists in an object using the in operator (<span>'gender'</span> in person will return true but <span>'email'</span> in person will return false). Finally, we can loop through all the properties of an object using a for...in loop.
+</p>
+<p>I hope this helps you understand the basics of JavaScript objects and properties. Let me know if you have any further questions!
+</p>
+    <script src="./demo.js"></script>
+</body>
+</html>
