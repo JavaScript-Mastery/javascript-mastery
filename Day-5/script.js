@@ -4,7 +4,7 @@ const head = document.getElementById("my-name");
 
 button.addEventListener("click", function () {
   heading.innerHTML = "Button clicked";
-  head.innerHTML = " By Ajay ";
+  head.innerHTML = " By You ";
   heading.style.color = "red";
   head.style.color = "green";
 });
