@@ -28,7 +28,7 @@
      <tr>
         <td> Day-4 </td>
         <td> Objects and Properties </td>
-        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Day-4/">Preview </a> </td>
+        <td> <a href="https://github.com/JavaScript-Mastery/javascript-mastery/tree/main/Day-4">Preview </a> </td>
         <td> Active </td>
      </tr>  
      <tr>
