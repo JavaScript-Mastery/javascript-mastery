@@ -28,8 +28,8 @@
      <tr>
         <td> Day-4 </td>
         <td> Objects and Properties </td>
-        <td> <a href="#">Preview </a> </td>
-        <td> Pending </td>
+        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Day-4/">Preview </a> </td>
+        <td> Active </td>
      </tr>  
      <tr>
         <td> Day-5</td>
