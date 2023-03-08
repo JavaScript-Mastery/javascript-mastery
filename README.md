@@ -34,8 +34,8 @@
      <tr>
         <td> Day-5</td>
         <td> DOM Manipulation </td>
-        <td> <a href="#">Preview </a> </td>
-        <td> Pending </td>
+        <td> <a href="https://github.com/JavaScript-Mastery/javascript-mastery/tree/main/Day-5">Preview </a> </td>
+        <td> Active </td>
      </tr>
      <tr>
         <td> Day-6 </td>
