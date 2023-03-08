@@ -179,4 +179,10 @@ Here is an example that demonstrates some of the concepts we've covered:
 
 In this example, we select the `heading` and `button` elements using their `IDs`. We then add an event listener to the button that changes the heading's content and style when the button is clicked.
 
+## Example of give for select elements:
+
+1. document.getElementById(): [click](./id.html)
+2. document.getElementsByClassName(): [click](./class.html)
+3. document.getElementsByTagName(): [click](./Tag.html)
+
 I hope this helps you understand the basics of DOM Manipulation in JavaScript! Let me know if you have any further questions.
