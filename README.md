@@ -190,7 +190,18 @@
   </table>
   
    <hr /> 
-
+   
+   <table align="center">
+     <tr><th>Project</th><th>Topic</th><th>Preview</th><th>Source Code</th></tr>
+     <tr>
+       <td>1. </td>
+       <td>DOM Manipulation </td>
+       <td><a href="https://javascript-mastery.github.io/javascript-mastery/Projects/project-1/index.html">Click</a></td>
+       <td><a href="https://github.com/JavaScript-Mastery/javascript-mastery/tree/main/Projects/project-1">Click</a></td>
+     </tr>
+   </table>
+   
+   <hr />
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 
   
