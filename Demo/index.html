@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>document.getElementById()</title>
+    <title>Demo</title>
 </head>
 <body>
-  
-<h1 id="my-id">Hello World!</h1>
+    
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
 
 <script>
-// Get element with id "my-id"
-var elements = document.getElementById("my-id");
+// Get all <p> elements
+var elements = document.getElementsByTagName("p");
 
-// Change the content of the element
-elements.innerHTML = "New content!";
+// Change the content of the first element
+elements[0].innerHTML = "New content!";
 </script>
-
 </body>
 </html>
