@@ -204,7 +204,7 @@
        <td>DOM Manipulation </td>
        <td><a href="https://javascript-mastery.github.io/javascript-mastery/Projects/project-1/index.html">Click</a></td>
        <td><a href="https://github.com/JavaScript-Mastery/javascript-mastery/tree/main/Projects/project-1">Click</a></td>
-       <td><a href="#">Watch</a></td>
+       <td><a href="https://www.youtube.com/watch?v=VxPRlBN1bdc">Watch</a></td>
      </tr>
    </table>
    
