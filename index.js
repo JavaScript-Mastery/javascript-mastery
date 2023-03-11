@@ -330,11 +330,11 @@
 //   i++;
 // } while (i < 5);
 // Output: 0 1 2 3 4
-let string = "";
-for (let i = 0; i < 5; i++) {
-  for (let j = 0; i < 5; j++) {
-    string += j;
-  }
-  string += "\n";
-}
-console.log(string);
+// let string = "";
+// for (let i = 0; i < 5; i++) {
+//   for (let j = 0; i < 5; j++) {
+//     string += j;
+//   }
+//   string += "\n";
+// }
+// console.log(string);

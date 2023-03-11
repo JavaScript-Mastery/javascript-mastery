@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(100, 100, 150);
+}
+h1 {
+  text-align: center;
+  color: #fff;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.col {
+  width: 400px;
+  height: 100px;
+  text-align: center;
+  padding-top: 3%;
+  background-color: cyan;
+  border: 2px solid red;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px rgb(12, 9, 76);
+}
+.col:hover {
+  background-color: green;
+}
