@@ -42,20 +42,20 @@
      <tr>
         <td> Day-6 </td>
         <td> Event Handling </td>
-        <td> <a href="#">Preview </a> </td>
-        <td> Pending </td>
+        <td> <a href="https://github.com/JavaScript-Mastery/javascript-mastery/tree/main/Day-6">Preview </a> </td>
+        <td> Active </td>
      </tr>
      <tr>
         <td> Day-7 </td>
         <td> Regular Expressions </td>
-        <td> <a href="#">Preview </a> </td>
-        <td> Pending </td>
+        <td> <a href="https://github.com/JavaScript-Mastery/javascript-mastery/tree/main/Day-7">Preview </a> </td>
+        <td> Active </td>
      </tr>
      <tr>
         <td> Day-8 </td>
         <td> Error Handling and Debugging </td>
-        <td> <a href="#">Preview </a> </td>
-        <td> Pending </td>
+        <td> <a href="https://github.com/JavaScript-Mastery/javascript-mastery/tree/main/Day-8">Preview </a> </td>
+        <td> Active </td>
      </tr>
      <tr>
         <td> Day-9 </td>
