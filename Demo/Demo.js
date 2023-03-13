@@ -105,9 +105,37 @@
 // console.log("sub: " + Ans2); // [2, 4, 6]
 
 // ========= some() ===========
-let myArray = [1, 2, 3, 4, 5];
-const Ans2 = myArray.some(function (sub, x) {
-  return x % 2 === 0;
-});
-console.log(Ans2); //true
+// let myArray = [1, 2, 3, 4, 5];
+// const Ans2 = myArray.some(function (sub, x) {
+//   return x % 2 === 0;
+// });
+// console.log(Ans2); //true
 // ========= every() ==========
+
+// ============ Strings =============
+
+// let str = "Hello World";
+// console.log(str); // Hello World
+// console.log(str.split(" "));
+// console.log(str.split(""));
+// console.log(str.split("1"));
+
+// === toUpperCase ==============
+
+// let str = "Ajay Dhangar";
+// console.log(str.toUpperCase());
+// === search
+
+// let str = "Hello World";
+// console.log(str.search("o")); // 4
+// console.log(str.search("w")); // -1
+
+// ===== substr() ===== substring()
+// const str = "Hello World";
+
+// console.log(str.substr(1, 3)); // ell
+// console.log(str.substring(1, 3)); // el
+
+// =====  join ===============
+// const str = ["Hello", "world"];
+// console.log(str.join(" + "));
