@@ -39,6 +39,7 @@ body {
 .main-container .text-area {
   font-size: 1.5rem;
   line-height: 1.5;
+  font-weight: bold;
 }
 .main-container .person {
   font-size: 1.6rem;
