@@ -139,3 +139,11 @@
 // =====  join ===============
 // const str = ["Hello", "world"];
 // console.log(str.join(" + "));
+// var a = 3; var b = a--
+// console.log(b)
+
+//============================
+
+// let str = "Hello";
+// str.sort();
+// console.log(str);

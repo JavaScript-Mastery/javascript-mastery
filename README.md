@@ -199,17 +199,24 @@
    <table align="center">
      <tr>
        <th>Project</th>
-       <th>Topic</th>
+       <th>Name</th>
        <th>Preview</th>
        <th>Source Code</th>
        <th>Output Video</th>
       </tr>
      <tr>
        <td>1. </td>
-       <td>DOM Manipulation </td>
+       <td>DOM Manipulation Overview </td>
        <td><a href="https://javascript-mastery.github.io/javascript-mastery/Projects/project-1/index.html">Click</a></td>
        <td><a href="https://github.com/JavaScript-Mastery/javascript-mastery/tree/main/Projects/project-1">Click</a></td>
        <td><a href="https://www.youtube.com/watch?v=VxPRlBN1bdc">Watch</a></td>
+     </tr>
+     <tr>
+       <td>2. </td>
+       <td>Quote Generator</td>
+       <td><a href="https://javascript-mastery.github.io/javascript-mastery/Projects/project-2/index.html">Click</a></td>
+       <td><a href="https://github.com/JavaScript-Mastery/javascript-mastery/tree/main/Projects/project-2">Click</a></td>
+       <td><a href="#">Watch</a></td>
      </tr>
    </table>  
    
@@ -228,8 +235,6 @@
    
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
-  
-  
 ## Contributors ✨
 
  <table align="center">  
@@ -238,6 +243,5 @@
   </tr> 
   
   </table>
-  
 
 <div align="center">Made with ❤️ by <a href="https://github.com/Ajay-Dhangar" target="_blank">Ajay-Dhangar</a></div>
