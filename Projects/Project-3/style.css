@@ -1,0 +1,39 @@
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #ddd;
+}
+
+section {
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+}
