@@ -60,8 +60,8 @@
      <tr>
         <td> Day-9 </td>
         <td> Scope and Closures </td>
-        <td> <a href="#">Preview </a> </td>
-        <td> Pending </td>
+        <td> <a href="https://github.com/JavaScript-Mastery/javascript-mastery/tree/main/Day-9">Preview </a> </td>
+        <td> Active </td>
      </tr>
      <tr>
         <td> Day-10 </td>
