@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DOM Manipulation</title>
+  </head>
+  <body>
+    <h1 id="my-heading">Hello, World!</h1>
+
+    <button id="my-button">Click me!</button>
+    <br/><br/>
+    <form action="#">
+      <input type="text" name="num1" id="num1" placeholder="Num1">
+      <input type="text" name="num2" id="num2" placeholder="Num2">
+      <input type="submit" value="">
+    </form>
+    <script>
+      const heading = document.getElementById("my-heading");
+      const button = document.getElementById("my-button");
+      button.addEventListener("click", function () {
+        heading.innerHTML = "Button clicked";        
+        heading.style.color = "red";        
+      });
+    </script>
+  </body>
+</html>

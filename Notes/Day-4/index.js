@@ -31,3 +31,35 @@
 // for (let key in person) {
 //   console.log(key + ": " + person[key]);
 // }
+
+function countAlphabets(str, n) {
+  // initialize an empty map
+  let map = new Map();
+
+  // iterate over the string
+  for (let i = 0; i < n; i++) {
+    // convert to lowercase to avoid case sensitivity
+    let char = str.charAt(i).toLowerCase();
+
+    // if the character is an alphabet, update the map
+    if (/[a-z]/.test(char)) {
+      if (map.has(char)) {
+        map.set(char, map.get(char) + 1);
+      } else {
+        map.set(char, 1);
+      }
+    }
+  }
+
+  // print the count of each alphabet
+  for (let [key, value] of map) {
+    console.log(`${key}: ${value}`);
+  }
+}
+
+// prompt the user to enter a string and a length
+let str = prompt("Enter a string:");
+let n = str.length;
+
+// call the countAlphabets function with the user input
+countAlphabets(str, n);
