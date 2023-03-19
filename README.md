@@ -12,80 +12,80 @@
      <tr>
         <td> Day-1 </td>
         <td> Introduction to JavaScript </td>
-        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Day-1/">Preview </a> </td>
+        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-1/">Preview </a> </td>
         <td> Active </td>
      </tr>
      <tr>
         <td> Day-2 </td>
         <td> Functions and Conditionals </td>
-        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Day-2/">Preview </a> </td>
+        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-2/">Preview </a> </td>
         <td> Active </td>
      </tr>
      <tr>
         <td> Day-3 </td>
         <td> Arrays and Loops </td>
-        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Day-3/">Preview </a> </td>
+        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-3/">Preview </a> </td>
         <td> Active </td>
      </tr>
      <tr>
         <td> Day-4 </td>
         <td> Objects and Properties </td>
-        <td> <a href="https://github.com/JavaScript-Mastery/javascript-mastery/tree/main/Day-4">Preview </a> </td>
+        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-4/">Preview </a> </td>
         <td> Active </td>
      </tr>  
      <tr>
         <td> Day-5</td>
         <td> DOM Manipulation </td>
-        <td> <a href="https://github.com/JavaScript-Mastery/javascript-mastery/tree/main/Day-5">Preview </a> </td>
+        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-5/">Preview </a> </td>
         <td> Active </td>
      </tr>
      <tr>
         <td> Day-6 </td>
         <td> Event Handling </td>
-        <td> <a href="https://github.com/JavaScript-Mastery/javascript-mastery/tree/main/Day-6">Preview </a> </td>
+        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-6/">Preview </a> </td>
         <td> Active </td>
      </tr>
      <tr>
         <td> Day-7 </td>
         <td> Regular Expressions </td>
-        <td> <a href="https://github.com/JavaScript-Mastery/javascript-mastery/tree/main/Day-7">Preview </a> </td>
+        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-7/">Preview </a> </td>
         <td> Active </td>
      </tr>
      <tr>
         <td> Day-8 </td>
         <td> Error Handling and Debugging </td>
-        <td> <a href="https://github.com/JavaScript-Mastery/javascript-mastery/tree/main/Day-8">Preview </a> </td>
+        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-8/">Preview </a> </td>
         <td> Active </td>
      </tr>
      <tr>
         <td> Day-9 </td>
         <td> Scope and Closures </td>
-        <td> <a href="https://github.com/JavaScript-Mastery/javascript-mastery/tree/main/Day-9">Preview </a> </td>
+        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-9/">Preview </a> </td>
         <td> Active </td>
      </tr>
      <tr>
         <td> Day-10 </td>
         <td> Classes and Inheritance </td>
-        <td> <a href="#">Preview </a> </td>
-        <td> Pending </td>
+        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-10/">Preview </a> </td>
+        <td> Active </td>
      </tr>
      <tr>
         <td> Day-11 </td>
         <td> Asynchronous Programming </td>
-        <td> <a href="#">Preview </a> </td>
-        <td> Pending </td>
+        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-11/">Preview </a> </td>
+        <td> Active </td>
      </tr>
      <tr>
         <td> Day-12 </td>
         <td> ES6 Features </td>
-        <td> <a href="#">Preview </a> </td>
-        <td> Pending </td>
+        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-12/">Preview </a> </td>
+        <td> Active </td>
      </tr>
      <tr>
         <td> Day-13 </td>
         <td> Higher Order Functions </td>
-        <td> <a href="#">Preview </a> </td>
-        <td> Pending </td>
+        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-13/">Preview </a> </td>
+        <td> Active </td>
      </tr>  
      <tr>
         <td> Day-14 </td>
