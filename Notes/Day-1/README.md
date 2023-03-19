@@ -270,6 +270,6 @@ Try practicing these concepts with some simple exercises to get comfortable with
 
 **_These are some of the basic data types and operators in JavaScript that you should know to get started with the language._**
 
-Now Go to practicals [index.js](./index.js)
+Now Go to practicals [index.js](https://javascript-mastery.github.io/javascript-mastery/Practice/Day-1/index.js)
 
 <div align="center">Made with ❤️ by <a href="https://github.com/Ajay-Dhangar" target="_blank">Ajay-Dhangar</a></div>
