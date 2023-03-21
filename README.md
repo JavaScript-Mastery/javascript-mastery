@@ -227,8 +227,14 @@
   
   
    <table align="center">
+   <tr>
      <th>Interview Questions & Answers</th>
-  <td> <a href="#">View & Read </a> </td>
+     <th>Coding Assignment</th>
+   </tr>
+   <tr>
+     <td> <a href="#">View & Read </a> </td>
+      <td> <a href="https://javascript-mastery.github.io/Javascript-coding-assignment/">View & Read </a> </td>
+   </tr>
    </table>
            
    <hr />
