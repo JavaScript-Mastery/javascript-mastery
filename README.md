@@ -161,6 +161,7 @@
         <td> Day-22 </td>
         <td> React Hooks and Context </td>
         <td> <a href="#">Preview </a> </td>
+        <td> <a href="#"> waiting </a> </td>
         <td> Pending </td>
      </tr>
      <tr>
