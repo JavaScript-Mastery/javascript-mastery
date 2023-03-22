@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/99037494/226870686-177f5bdb-25e9-489f-a48e-5af3994b5c29.png)
+
 The project is a simple web application that allows users to create and view "notes". 
 Each note consists of a title and a body, and the user can create, read, update, and delete notes.
 
