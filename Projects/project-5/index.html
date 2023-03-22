@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Addition Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Addition Form</h1>
+		<form>
+			<label for="num1">Number 1:</label>
+			<input type="number" id="num1" name="num1" required> <br>
+			<label for="num2">Number 2:</label>
+			<input type="number" id="num2" name="num2" required> <br>
+			<input class="btn" type="button" value="Submit" onclick="addNumbers()">
+		</form>
+		<div id="result"></div>
+	</div>
+
+	<script src="./script.js"></script>
+</body>
+</html>

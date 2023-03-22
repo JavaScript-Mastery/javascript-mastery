@@ -178,3 +178,11 @@
 //   console.log(x);
 // }
 // console.log(x);
+
+function add(m, n) {
+  return m + n;
+}
+function sub(m, n) {
+  return m - n;
+}
+export { add, sub };

@@ -1,0 +1,53 @@
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+form {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input[type="number"] {
+  padding: 10px;
+  margin-right: 10px;
+  flex-grow: 1;
+}
+
+input[type="button"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#result {
+  font-size: 24px;
+  margin-top: 30px;
+}
+.btn {
+  margin-top: 20px;
+}
+@media (max-width: 600px) {
+  input[type="number"] {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  input[type="button"] {
+    flex-basis: 100%;
+  }
+}
