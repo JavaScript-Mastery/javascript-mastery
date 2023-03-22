@@ -21,7 +21,7 @@
         <td> Day-2 </td>
         <td> Functions and Conditionals </td>
         <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-2/">Preview </a> </td>
-        <td> <a href="#"> waiting </a> </td>
+        <td> <a href="https://youtu.be/nnJ7QdqtZUY"> Watching </a> </td>
         <td> Active </td>
      </tr>
      <tr>
@@ -104,23 +104,23 @@
      <tr>
         <td> Day-14 </td>
         <td> Data Structures and Algorithms </td>
-        <td> <a href="#">Preview </a> </td>
+        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-14/">Preview </a> </td>
         <td> <a href="#"> waiting </a> </td>
-        <td> Pending </td>
+        <td> Active </td>
      </tr>
      <tr>
         <td> Day-15 </td>
         <td> Design Patterns </td>
-        <td> <a href="#">Preview </a> </td>
+        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-15/">Preview </a> </td>
         <td> <a href="#"> waiting </a> </td>
-        <td> Pending </td>
+        <td> Active </td>
      </tr>
       <tr>
         <td> Day-16 </td>
         <td> Testing and Debugging </td>
-        <td> <a href="#">Preview </a> </td>
+        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-16/">Preview </a> </td>
         <td> <a href="#"> waiting </a> </td>
-        <td> Pending </td>
+        <td> Active </td>
      </tr>
      <tr>
         <td> Day-17 </td>
