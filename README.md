@@ -125,35 +125,35 @@
      <tr>
         <td> Day-17 </td>
         <td> Security and Performance </td>
-        <td> <a href="#">Preview </a> </td>
+        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-17/">Preview </a> </td>
         <td> <a href="#"> waiting </a> </td>
-        <td> Pending </td>
+        <td> Active </td>
      </tr>
      <tr>
         <td> Day-18 </td>
         <td> Frameworks and Libraries </td>
-        <td> <a href="#">Preview </a> </td>
+        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-18/">Preview </a> </td>
         <td> <a href="#"> waiting </a> </td>
-        <td> Pending </td>
+        <td> Active </td>
      </tr>
      <tr>
         <td> Day-19 </td>
         <td> Node.js and Express.js </td>
-        <td> <a href="#">Preview </a> </td>
+        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-19/">Preview </a> </td>
         <td> <a href="#"> waiting </a> </td>
         <td> Pending </td>
      </tr>
      <tr>
         <td> Day-20 </td>
         <td> GraphQL and Apollo </td>
-        <td> <a href="#">Preview </a> </td>
+        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-20/">Preview </a> </td>
         <td> <a href="#"> waiting </a> </td>
         <td> Pending </td>
      </tr>
      <tr>
         <td> Day-21 </td>
         <td> React.js Fundamentals </td>
-        <td> <a href="#">Preview </a> </td>
+        <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-21/">Preview </a> </td>
         <td> <a href="#"> waiting </a> </td>
         <td> Pending </td>
      </tr>
