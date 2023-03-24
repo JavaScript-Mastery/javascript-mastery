@@ -307,7 +307,7 @@ In this example, we define a `Color` enum with three named constants.
 We then declare a variable `c` of type `Color` and assign it the value `Color.Green`. 
 The value of `c` is `2`, since the enum maps `Green` to the value `2`.
 
-Resources
+### Resources
 Here are some resources to help you continue your TypeScript learning:
 
 - [TypeScript Documentation](https://www.typescriptlang.org/docs/)
