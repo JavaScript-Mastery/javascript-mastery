@@ -42,31 +42,6 @@ Here's some sample code to get you started:
 </html>
 ```
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Simple Calculator</title>
-</head>
-<body>
-	<h1>Simple Calculator</h1>
-	<label for="num1">Number 1:</label>
-	<input type="text" id="num1"><br><br>
-	<label for="num2">Number 2:</label>
-	<input type="text" id="num2"><br><br>
-	<label for="operation">Operation:</label>
-	<select id="operation">
-		<option value="add">+</option>
-		<option value="subtract">-</option>
-		<option value="multiply">*</option>
-		<option value="divide">/</option>
-	</select><br><br>
-	<button onclick="calculate()">Calculate</button><br><br>
-	<p id="result"></p>
-	<script src="./calculator.js"></script>
-</body>
-</html>
-```
-
 **JavaScript:** `calculator.js`\*
 
 ```javascript
