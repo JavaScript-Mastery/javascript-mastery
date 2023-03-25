@@ -164,63 +164,63 @@
         <td> React Hooks and Context </td>
         <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-22/">Preview </a> </td>
         <td> <a href="#"> waiting </a> </td>
-        <td> Pending </td>
+        <td> Active </td>
      </tr>
      <tr>
         <td> Day-23 </td>
         <td> React Router and Redux </td>
         <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-21/">Preview </a> </td>
         <td> <a href="#"> waiting </a> </td>
-        <td> Pending </td>
+        <td> Active </td>
      </tr>
      <tr>
         <td> Day-24 </td>
         <td> Advanced React Patterns </td>
         <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-21/">Preview </a> </td>
         <td> <a href="#"> waiting </a> </td>
-        <td> Pending </td>
+        <td> Active </td>
      </tr>
      <tr>
         <td> Day-25 </td>
         <td> Server-Side Rendering with React </td>
         <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-21/">Preview </a> </td>
         <td> <a href="#"> waiting </a> </td>
-        <td> Pending </td>
+        <td> Active </td>
      </tr>
      <tr>
         <td> Day-26 </td>
         <td> TypeScript Fundamentals </td>
         <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-26/">Preview </a> </td>
         <td> <a href="#"> waiting </a> </td>
-        <td> Pending </td>
+        <td> Active </td>
      </tr>
      <tr>
         <td> Day-27 </td>
         <td> TypeScript with React and Node.js </td>
         <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-27/">Preview </a> </td>
         <td> <a href="#"> waiting </a> </td>
-        <td> Pending </td>
+        <td> Active </td>
      </tr>
      <tr>
         <td> Day-28 </td>
         <td> Advanced Node.js Concepts </td>
         <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-28/">Preview </a> </td>
         <td> <a href="#"> waiting </a> </td>
-        <td> Pending </td>
+        <td> Active </td>
      </tr>
      <tr>
         <td> Day-29 </td>
         <td> Advanced JavaScript Concepts </td>
         <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-29/">Preview </a> </td>
         <td> <a href="#"> waiting </a> </td>
-        <td> Pending </td>
+        <td> Active </td>
      </tr>
      <tr>
         <td> Day-30</td>
         <td> Optimizing and Scaling Applications </td>
         <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-30/">Preview </a> </td>
         <td> <a href="#"> waiting </a> </td>
-        <td> Pending </td>
+        <td> Active </td>
      </tr>
   </table>
   
