@@ -1,6 +1,6 @@
 # Day-29	Advanced JavaScript Concepts
 
-`. Closures:
+1. Closures:
 Closures are an important concept in JavaScript. 
 A closure is created when a function is defined inside another function, and the inner function has access to the outer function's v
 ariables and parameters, even after the outer function has returned. 
