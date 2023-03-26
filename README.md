@@ -1,5 +1,8 @@
 # javascript-mastery
 
+***Welcome to JavaScript Mastery, your ultimate guide to mastering JavaScript. This is a collection of notes, projects, and interview questions for learning JavaScript.
+This project provides a comprehensive learning path for beginners to advanced developers to learn JavaScript from scratch.***
+
 <h1 align="center"> Notes </h1>
 
 <!-- =================  Learning Topics ================= -->
@@ -297,11 +300,18 @@
 
 ## Contributors ✨
 
+Contributions to this repository are welcome. To contribute, please fork this repository, make your changes, and submit a pull request.
+
+
  <table align="center">  
    <tr><td align="center"><a href="https://github.com/Ajay-Dhangar"><img src="https://avatars.githubusercontent.com/u/99037494?v=4" width="120px;" alt="Ajay Dhangar"/>  <br /><sub><b>Ajay-Dhangar</b></sub></a><br /><a href="#" title="Code">💻</a></td>     
     
   </tr> 
   
   </table>
+  
+  ## License
+
+This repository is licensed under the MIT License.
 
 <div align="center">Made with ❤️ by <a href="https://github.com/Ajay-Dhangar" target="_blank">Ajay-Dhangar</a></div>
