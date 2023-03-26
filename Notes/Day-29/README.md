@@ -132,7 +132,7 @@ The spread syntax is a way to spread the elements of an array or object into ano
 
 Here's an example:
 
-``js
+```js
 var arr1 = [1, 2, 3];
 var arr2 = [4, 5, 6];
 
