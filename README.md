@@ -19,7 +19,7 @@ This project provides a comprehensive learning path for beginners to advanced de
         <td> Day-1 </td>
         <td> Introduction to JavaScript </td>
         <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Notes/Day-1/">Preview </a> </td>
-        <td> <a href="https://youtu.be/Clj3MmH3WfM"> Watching </a> </td>
+        <td> <a href="https://youtu.be/Lgxgm-T9cgA"> Watching </a> </td>
         <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Projects/project-1/index.html"> Click </a> </td> 
      </tr>
      <tr>
