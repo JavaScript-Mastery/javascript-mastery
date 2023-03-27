@@ -227,8 +227,13 @@ This project provides a comprehensive learning path for beginners to advanced de
      </tr>
   </table>
   
+  <hr /> 
   
-   <hr /> 
+  <h1 align="center"> Best Resources For You</h1>
+  
+  - **Playlist in Hindi:** [Click](https://youtube.com/playlist?list=PL2PkZdv6p7Zm98C3RdyXZF1O83tjCB-sC)
+  - **Playlist in English:** [Click](https://youtube.com/playlist?list=PLsyeobzWxl7rrvgG7MLNIMSTzVCDZZcT4)      
+       
    
    <!-- =================  Projects ================= -->
    
