@@ -179,10 +179,19 @@
 // }
 // console.log(x);
 
-function add(m, n) {
-  return m + n;
+// function add(m, n) {
+//   return m + n;
+// }
+// function sub(m, n) {
+//   return m - n;
+// }
+// export { add, sub };
+console.log(a);
+var b = 20;
+var a = 20;
+function a1() {
+  a = a + 23;
+  return a;
 }
-function sub(m, n) {
-  return m - n;
-}
-export { add, sub };
+var c = a1();
+console.log(a, c); // undifine ,  20 NaN
