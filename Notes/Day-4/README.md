@@ -1,90 +1,148 @@
-<p>Here's an example code that covers some basic concepts of JavaScript objects and properties:
-</p>
 
-```javascript
-// Creating an object with properties
+## Day-4	Objects and Properties
+
+In JavaScript, objects are used to store collections of data and functions. Objects are essentially a group of key-value pairs, where each key is a property name, and each value can be any JavaScript data type, including another object or a function.
+
+To create an object in JavaScript, you can use either object literal notation or the object constructor function.
+
+Object Literal Notation:
+
+```js
+const myObj = {
+  property1: value1,
+  property2: value2,
+  property3: value3,
+  //...
+};
+```
+
+Object Constructor Function:
+
+```js
+const myObj = new Object();
+myObj.property1 = value1;
+myObj.property2 = value2;
+myObj.property3 = value3;
+//...
+```
+
+To access an object's property, you can use dot notation or bracket notation:
+
+Dot Notation:
+
+```js
+const myObj = {
+  property1: value1,
+  property2: value2,
+  property3: value3,
+};
+
+console.log(myObj.property1); // output: value1
+console.log(myObj.property2); // output: value2
+console.log(myObj.property3); // output: value3
+```
+
+Bracket Notation:
+
+```js
+const myObj = {
+  property1: value1,
+  property2: value2,
+  property3: value3,
+};
+
+console.log(myObj['property1']); // output: value1
+console.log(myObj['property2']); // output: value2
+console.log(myObj['property3']); // output: value3
+```
+
+You can also add or modify properties of an object using either notation:
+
+```js
+const myObj = {
+  property1: value1,
+  property2: value2,
+  property3: value3,
+};
+
+myObj.property4 = value4; // Adding a new property
+myObj.property1 = newValue; // Modifying an existing property
+```
+
+In addition, you can also use object methods, which are functions that are stored as properties of an object:
+
+```js
+const myObj = {
+  property1: value1,
+  property2: value2,
+  method1: function() {
+    console.log('Hello World!');
+  }
+};
+
+myObj.method1(); // output: Hello World!
+```
+
+Here are some additional examples to help you better understand objects and properties in JavaScript:
+
+Example 1: Creating an object with object literal notation and accessing its properties with dot notation and bracket notation.
+
+```js
+// create an object with object literal notation
 const person = {
   name: "John",
   age: 30,
-  gender: "male",
-  occupation: "developer",
+  "favorite color": "blue"
 };
 
-// Accessing properties using dot notation
-console.log(person.name); // Output: 'John'
-console.log(person.age); // Output: 30
+// accessing properties with dot notation
+console.log(person.name); // output: John
+console.log(person.age); // output: 30
 
-// Accessing properties using bracket notation
-console.log(person["gender"]); // Output: 'male'
-console.log(person["occupation"]); // Output: 'developer'
-
-// Adding new properties
-person.email = "john@example.com";
-
-// Modifying existing properties
-person.age = 31;
-
-// Deleting properties
-delete person.email;
-
-// Checking if a property exists
-console.log("gender" in person); // Output: true
-console.log("email" in person); // Output: false
-
-// Looping through all properties of an object
-for (let key in person) {
-  console.log(key + ": " + person[key]);
-}
+// accessing properties with bracket notation
+console.log(person["name"]); // output: John
+console.log(person["age"]); // output: 30
+console.log(person["favorite color"]); // output: blue
 ```
 
-In this code, we start by creating an object called `person` with four properties: `name`, `age`, `gender`, and `occupation`. We can access these properties using dot notation (`person.name`) or bracket notation (`person['gender']`). We can add new properties to an object using dot notation (`person.email = 'john@example.com'`) or modify existing properties using dot notation (`person.age = 31`). We can delete properties using the delete operator (`delete person.email`).
+Example 2: Creating an object with the object constructor function and adding a new property with dot notation.
 
-We can check if a property exists in an object using the in operator (`'gender'` in person will return true but `'email'` in person will return false). Finally, we can loop through all the properties of an object using a `for...in` loop.
+```js
+// create an object with the object constructor function
+const car = new Object();
+car.make = "Honda";
+car.model = "Civic";
+car.year = 2020;
 
-<hr / >
+// add a new property with dot notation
+car.color = "black";
 
-In JavaScript, both `Map` and `Object` are used to store key-value pairs, but they have some differences.
+console.log(car.make); // output: Honda
+console.log(car.model); // output: Civic
+console.log(car.year); // output: 2020
+console.log(car.color); // output: black
+```
 
-`Object` is a built-in data type in JavaScript and is used to represent a collection of properties or attributes. 
-Each property has a name (or key) and a value. It is defined using curly braces {} and can be modified by adding, deleting, or updating properties.
+Example 3: Using object methods to perform a calculation.
 
-For example:
-
-```javascript
-let person = {
-  name: "John",
-  age: 30,
-  city: "New York"
+```js
+// create an object with a method
+const calculator = {
+  add: function(num1, num2) {
+    return num1 + num2;
+  },
+  subtract: function(num1, num2) {
+    return num1 - num2;
+  }
 };
 
-console.log(person.name); // Output: "John"
+// using the add method to perform a calculation
+const result = calculator.add(5, 3);
+console.log(result); // output: 8
 
-person.name = "Jane";
-console.log(person.name); // Output: "Jane"
-
-delete person.age;
-console.log(person); // Output: { name: "Jane", city: "New York" }
+// using the subtract method to perform a calculation
+const result2 = calculator.subtract(10, 2);
+console.log(result2); // output: 8
 ```
-On the other hand, `Map` is a built-in class in JavaScript and is used to store key-value pairs as entries. Unlike objects, the keys in a `Map` can be of any type including objects, functions, and primitives. It is defined using the `Map()` constructor and can be modified by adding, deleting, or updating entries.
 
-For example:
-
-```javascript
-let myMap = new Map();
-myMap.set("name", "John");
-myMap.set("age", 30);
-
-console.log(myMap.get("name")); // Output: "John"
-
-myMap.set("name", "Jane");
-console.log(myMap.get("name")); // Output: "Jane"
-
-myMap.delete("age");
-console.log(myMap); // Output: Map { "name" => "Jane" }
-```
-In summary, while both `Object` and `Map` can store key-value pairs, Object is best suited for storing simple data and properties, while Map is best suited for more complex data structures that require flexible and varied keys.
-
-
-</p>
-<p>I hope this helps you understand the basics of JavaScript objects and properties. Let me know if you have any further questions!
-</p>
+I hope these examples help you better understand objects and properties in JavaScript! Let me know if you have any further questions.
