@@ -1,25 +1,14 @@
 ---
 slug: welcome
 title: Welcome
-authors: [slorber, yangshun]
-tags: [facebook, hello, docusaurus]
+authors: [slorber]
+tags: [MastermindHQ, hello, inro, inroduction, about]
 ---
 
-[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).
+Welcome to **CodeMastermindHQ**, the ultimate online destination for developers of all skill levels. As the founder and lead developer of this website, I am proud to offer a wide range of resources, tools, and services that can help you take your coding skills to the next level. Whether you're just starting out on your coding journey or you're an experienced developer looking to expand your skillset, we have something for everyone.
 
-Simply add Markdown files (or folders) to the `blog` directory.
+Our site features a wealth of tutorials, courses, and other learning materials that cover everything from the basics of coding to advanced techniques and best practices. We also offer a range of tools and resources to help you streamline your workflow and increase your productivity, from code editors and debuggers to project management tools and collaboration software.
 
-Regular blog authors can be added to `authors.yml`.
+At **CodeMastermindHQ**, we believe that learning to code is about more than just memorizing syntax and algorithms. It's about fostering a community of passionate developers who share a love of coding and a commitment to continuous learning and improvement. That's why we offer a range of community features, including forums, discussion boards, and chat rooms, where you can connect with like-minded developers from around the world.
 
-The blog post date can be extracted from filenames, such as:
-
-- `2019-05-30-welcome.md`
-- `2019-05-30-welcome/index.md`
-
-A blog post folder can be convenient to co-locate blog post images:
-
-![Docusaurus Plushie](./docusaurus-plushie-banner.jpeg)
-
-The blog supports tags as well!
-
-**And if you don't want a blog**: just delete this directory, and use `blog: false` in your Docusaurus config.
+Join us today and take the first step towards becoming a coding mastermind!
