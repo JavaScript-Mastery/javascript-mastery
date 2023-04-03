@@ -14,7 +14,7 @@ To handle events in JavaScript, you need to register an event listener on a DOM 
 
 Here's an example of registering an event listener for a button click:
 
-```js title="index.js"
+```js
 const button = document.querySelector('button');
 button.addEventListener('click', function() {
   console.log('Button clicked!');
@@ -29,7 +29,7 @@ Let's say we have an input field and we want to respond to changes made by the u
 
 Here's an example:
 
-```html title="index.html"
+```html
 <input id="name-input" type="text">
 <p id="greeting"></p>
 
