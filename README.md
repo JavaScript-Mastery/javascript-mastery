@@ -7,7 +7,7 @@ This project provides a comprehensive learning path for beginners to advanced de
 
 <!-- =================  Learning Topics ================= -->
 
-  <table align="center">
+<!--   <table align="center">
      <tr>
         <th> Day </th>
         <th> Topic </th>
@@ -226,7 +226,8 @@ This project provides a comprehensive learning path for beginners to advanced de
         <td> Active </td>
      </tr>
   </table>
-  
+   -->
+   - **CodeMastermindHQ:** [Click](https://codemastermindhq.vercel.app/docs/category/javascript-mastery)
   <hr /> 
   
   <h1 align="center"> Best Resources For You</h1>
@@ -236,7 +237,7 @@ This project provides a comprehensive learning path for beginners to advanced de
        
    
    <!-- =================  Projects ================= -->
-   
+<!--    
    <h1 align="center"> Projects for checkout skills (For task) </h1>
    
    <table align="center">
@@ -264,12 +265,12 @@ This project provides a comprehensive learning path for beginners to advanced de
    </table>  
    
    <hr /> 
-   
+    -->
    <!-- =================  Interview Questions & Answers ================= -->
    
   <h1 align="center"> Interview Questions & Answers </h1>
-  
-   <table align="center">
+<!--   
+<!--    <table align="center">
    <tr>
      <th>Interview Questions & Answers</th>
      <th>Coding Assignment</th>
@@ -278,8 +279,34 @@ This project provides a comprehensive learning path for beginners to advanced de
      <td> <a href="#">View & Read </a> </td>
       <td> <a href="https://javascript-mastery.github.io/Javascript-coding-assignment/">View & Read </a> </td>
    </tr>
-   </table>
-           
+   </table> -->
+   
+   1. Difference between “ == “ and “ === “ operators. with the help of example. 
+   
+      Solution: [Click](https://github.com/Ajay-Dhangar/CodeMastermindHQ/discussions/4)
+
+   2. What is the spread operator? 
+    
+      Solution: [Click](https://github.com/Ajay-Dhangar/CodeMastermindHQ/discussions/5)
+   
+   3. What are the differences between var, let and const?
+     
+      Solution: [Click](https://github.com/Ajay-Dhangar/CodeMastermindHQ/discussions/6)
+   
+   4. What is execution context?
+     
+      Solution: [Click](https://github.com/Ajay-Dhangar/CodeMastermindHQ/discussions/7)
+
+   5. What is creation phase and execution phase?
+     
+      Solution: [Click]()
+      
+   6. What is meant by first class functions?
+     
+      Solution: [Click]()
+      
+   
+<!--    
    <hr />
    
    <h1 align="center"> Project Idea's </h1>
@@ -298,10 +325,10 @@ This project provides a comprehensive learning path for beginners to advanced de
      <td><a href="https://github.com/JavaScript-Mastery/javascript-mastery/tree/main/Projects/project-1">Click</a></td>
    </tr>
    </table>
-           
+            -->
    <hr />
    
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+<!-- [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 ## Contributors ✨
 
@@ -320,3 +347,4 @@ Contributions to this repository are welcome. To contribute, please fork this re
 This repository is licensed under the MIT License.
 
 <div align="center">Made with ❤️ by <a href="https://github.com/Ajay-Dhangar" target="_blank">Ajay-Dhangar</a></div>
+ -->
