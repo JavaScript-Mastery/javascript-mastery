@@ -1,0 +1,74 @@
+body {
+  background-color: black;
+}
+
+.heading {
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px #fd1b06;
+}
+
+.btns {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.btns button {
+  background-color: forestgreen;
+  color: #fff;
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.btns button:active {
+  background-color: #fcdc00;
+  color: black;
+}
+.hello-world {
+  margin-top: 80px;
+  color: rgb(30, 19, 99);
+  background-color: #fcdc00;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 30px;
+  box-shadow: 5px 5px rgb(255, 32, 32);
+  width: auto;
+  height: 300px;
+  text-align: center;
+  font-size: 22px;
+  padding: 20px;
+}
+#container {
+  background-color: #fcdc00;
+  box-shadow: 3px 3px #fd0000;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+.day-1 {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: serif;
+}
+.ans1,
+.ans2,
+.ans3,
+.ans4,
+.ans5,
+.ans6,
+.ans7,
+.ans8,
+.ans9,
+.ans10,
+.ans11,
+.ans12 {
+  border: 1px solid red;
+  padding: 10px;
+  padding-left: 13px;
+  border-radius: 30px;
+  background-color: rgb(104, 104, 222);
+  color: #fff;
+  margin: auto 20% auto 20px;
+}

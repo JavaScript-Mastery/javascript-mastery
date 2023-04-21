@@ -186,12 +186,77 @@
 //   return m - n;
 // }
 // export { add, sub };
-console.log(a);
-var b = 20;
-var a = 20;
-function a1() {
-  a = a + 23;
-  return a;
+//
+
+// function isPrime(num) {
+//   return new Promise((resolve, reject) => {
+//     if (num <= 1) {
+//       reject(`${num} is not a prime number`);
+//     }
+
+//     for (let i = 2; i <= Math.sqrt(num); i++) {
+//       if (num % i === 0) {
+//         reject(`${num} is not a prime number`);
+//       }
+//     }
+
+//     resolve(`${num} is a prime number`);
+//   });
+// }
+// isPrime(7)
+//   .then((result) => console.log(result))
+//   .catch((error) => console.log(error)); // Output: "7 is a prime number"
+
+// isPrime(12)
+//   .then((result) => console.log(result))
+//   .catch((error) => console.log(error)); // Output: "12 is not a prime number"
+
+// setTimeout(() => {
+//   setTimeout(() => {
+//     setTimeout(() => {
+//       console.log("A");
+//     }, 3000);
+//   }, 2000);
+// }, 1000);
+
+// function printNumbers(callback) {
+//   let i = 1;
+//   const a = setInterval(() => {
+//     console.log(i);
+//     i++;
+//     if (i > 7) {
+//       clearInterval(a);
+//       callback();
+//     }
+//   }, 1000);
+// }
+
+// function callback() {
+//   console.log("Done");
+// }
+
+// printNumbers(callback);
+
+abc();
+
+function abc() {
+  const a = 25;
+
+  function xyz() {
+    console.log(a);
+  }
+
+  xyz();
 }
-var c = a1();
-console.log(a, c); // undifine ,  20 NaN
+
+for (let i = 0; i < 3; i++) {
+  setTimeout(function log() {
+    console.log(i);
+  }, 1000);
+}
+
+const arrow = () => {
+  console.log("Hello");
+};
+
+arrow();

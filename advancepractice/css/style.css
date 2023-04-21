@@ -1,0 +1,13 @@
+/* Style.css */
+
+/* Styling for Body tag */
+
+body {
+  padding: 20px;
+}
+
+/* Stling for root id */
+
+#root {
+  border-radius: 2%;
+}
