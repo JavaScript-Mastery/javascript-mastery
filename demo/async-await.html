@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async/Await</title>
+</head>
+<body>
+    <script>
+        async function abc() {
+            const myData = await fetch("https://jsonplaceholder.typicode.com/users")            
+            console.log(await myData.json());            
+        }
+        abc();
+    </script>
+    <script>
+        function mno() {
+            fetch("https://jsonplaceholder.typicode.com/users").then((data)=>data.json()).then((res)=>{
+                console.log(res);
+            })
+        }
+        mno()
+    </script>
+    <script>
+        function a() {
+            try {
+                fetch("https://jsonplaceholder.typicode.com/users").then((data)=>data.json()).then((res)=>{
+                console.log(res);
+            })
+            } catch (error) {
+                console.log(error);
+            }
+        }
+        a()
+    </script>
+</body>
+</html>

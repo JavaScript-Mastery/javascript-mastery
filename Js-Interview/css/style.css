@@ -72,3 +72,12 @@ body {
   color: #fff;
   margin: auto 20% auto 20px;
 }
+pre {
+  background-color: black;
+  color: darkorange;
+  padding: 5px;
+  padding-left: 15px;
+  border-radius: 10px;
+  /* overflow-x: scroll; */
+  overflow: auto;
+}
