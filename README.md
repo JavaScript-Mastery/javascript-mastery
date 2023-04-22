@@ -269,44 +269,17 @@ This project provides a comprehensive learning path for beginners to advanced de
    <!-- =================  Interview Questions & Answers ================= -->
    
   <h1 align="center"> Interview Questions & Answers </h1>
-<!--   
-<!--    <table align="center">
+   
+   <table align="center">
    <tr>
      <th>Interview Questions & Answers</th>
      <th>Coding Assignment</th>
    </tr>
    <tr>
-     <td> <a href="#">View & Read </a> </td>
+     <td> <a href="https://javascript-mastery.github.io/javascript-mastery/Js-Interview/">View & Read </a> </td>
       <td> <a href="https://javascript-mastery.github.io/Javascript-coding-assignment/">View & Read </a> </td>
    </tr>
-   </table> -->
-   
-   1. Difference between “ == “ and “ === “ operators. with the help of example. 
-   
-      Solution: [Click](https://github.com/Ajay-Dhangar/CodeMastermindHQ/discussions/4)
-
-   2. What is the spread operator? 
-    
-      Solution: [Click](https://github.com/Ajay-Dhangar/CodeMastermindHQ/discussions/5)
-   
-   3. What are the differences between var, let and const?
-     
-      Solution: [Click](https://github.com/Ajay-Dhangar/CodeMastermindHQ/discussions/6)
-   
-   4. What is execution context?
-     
-      Solution: [Click](https://github.com/Ajay-Dhangar/CodeMastermindHQ/discussions/7)
-
-   5. What is creation phase and execution phase?
-     
-      Solution: [Click]()
-      
-   6. What is meant by first class functions?
-     
-      Solution: [Click]()
-      
-   
-<!--    
+   </table> 
    <hr />
    
    <h1 align="center"> Project Idea's </h1>
