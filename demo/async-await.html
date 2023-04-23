@@ -7,7 +7,7 @@
     <title>Async/Await</title>
 </head>
 <body>
-    <script>
+    <!-- <script>
         async function abc() {
             const myData = await fetch("https://jsonplaceholder.typicode.com/users")            
             console.log(await myData.json());            
@@ -21,18 +21,74 @@
             })
         }
         mno()
-    </script>
-    <script>
+    </script> -->
+    <!-- <script>
         function a() {
-            try {
+            
                 fetch("https://jsonplaceholder.typicode.com/users").then((data)=>data.json()).then((res)=>{
                 console.log(res);
             })
-            } catch (error) {
-                console.log(error);
-            }
+            
         }
         a()
-    </script>
+    </script> -->
+    <!-- <script type="text/javascript">
+        // 1st create 1 fun... using variable as a perameter perform some tasks and return execution (result)
+        function a(n) {
+            return n*n;
+        }
+        // then create 2nd fun... using 1st fun... as a perameter return 1st fun.. with argument(perameter) value/variable
+        function b(m) {
+            return m(5);
+        }
+        const res = b(a)// crete other variable for storing 2nd fun... value
+        console.log(res); // print result
+    </script> -->
+
+    <!-- <script>
+        function outterfun() {
+            const name="Ajay"
+            function innerfun() {
+                console.log(name);
+            }
+            return innerfun
+        }
+        const res=outterfun()
+        res()
+    </script> -->
+    <!-- <script>const person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  fullName: function() {
+    return this.firstName + ' ' + this.lastName;
+  }
+};
+
+const fullName = person.fullName.call({firstName: 'John', lastName: 'Doe'});
+console.log(fullName); // Jane Doe
+</script> -->
+
+<!-- <script>const person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  fullName: function() {
+    return this.firstName + ' ' + this.lastName;
+  }
+};
+
+const fullName = person.fullName.apply(person, [person.firstName, person.lastName]);
+console.log(fullName); // Jane Doe</script> -->
+
+<!-- <script>
+    // Callback  function
+    function mult(a, b) {
+        console.log(a*b);
+    }
+    function demo(a, b, m) {
+        m(a, b)
+    }
+    demo(4, 6, mult)
+</script> -->
+
 </body>
 </html>
