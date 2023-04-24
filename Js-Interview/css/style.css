@@ -4,8 +4,8 @@ body {
 
 .heading {
   text-align: center;
-  color: #fff;
-  text-shadow: 2px 2px #fd1b06;
+  color: #fcdc00;
+  text-shadow: 2px 2px #4b2b2b;
 }
 
 .btns {
@@ -47,7 +47,9 @@ body {
   border-radius: 20px;
 }
 .day-1,
-.day-2 {
+.day-2,
+.day-3,
+.day-4 {
   padding: 10px;
   font-weight: bold;
   font-size: 20px;

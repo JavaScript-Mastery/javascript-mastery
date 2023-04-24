@@ -7,13 +7,70 @@
     <title>Async/Await</title>
 </head>
 <body>
+    <!-- <div id="timer">00:00:00</div>
+    <script>
+      // Get the timer element
+      var timer = document.getElementById("timer");
+
+      // Initialize the time values
+      var hours = 0;
+      var minutes = 0;
+      var seconds = 0;
+
+      // Update the timer every second
+      setInterval(function() {
+        // Increment the seconds
+        seconds++;
+
+        // Update the minutes if the seconds roll over
+        if (seconds >= 60) {
+          seconds = 0;
+          minutes++;
+        }
+
+        // Update the hours if the minutes roll over
+        if (minutes >= 60) {
+          minutes = 0;
+          hours++;
+        }
+
+        // Update the timer display
+        timer.textContent = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" +
+                             (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" +
+                             (seconds > 9 ? seconds : "0" + seconds);
+
+      }, 1000); // 1000 milliseconds = 1 second
+    </script> -->
+    <!-- <div id="a"></div>
+    <button onclick="addHeading()">Add Heading</button>
+    <script>
+      function addHeading() {
+        document.getElementById("a").innerHTML="<h1>MERN stack</h1>";  
+        var firstH1 = document.querySelector('h1');
+
+// Output the text content of the first H1 element
+console.log(firstH1.textContent);      
+      }
+      // Get the first H1 element
+
+
+    </script> -->
+
+    <!-- <script>
+        async function a() {
+           await fetch('https://jsonplaceholder.typicode.com/users').then((data)=>data.json().then((res)=>console.log(res)))
+        }
+        a()
+    </script> -->
+
     <!-- <script>
         async function abc() {
             const myData = await fetch("https://jsonplaceholder.typicode.com/users")            
             console.log(await myData.json());            
         }
         abc();
-    </script>
+    </script> -->
+    <!-- 
     <script>
         function mno() {
             fetch("https://jsonplaceholder.typicode.com/users").then((data)=>data.json()).then((res)=>{
@@ -89,6 +146,7 @@ console.log(fullName); // Jane Doe</script> -->
     }
     demo(4, 6, mult)
 </script> -->
+
 
 </body>
 </html>

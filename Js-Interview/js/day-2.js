@@ -14,11 +14,11 @@ export function btnTwo() {
                           
                           <p>Que.7 What is hoisting?</p><p class="ans7" id="day2Que7">Click me for Ans</p>
                           
-                          <p>Que.8 What is the DOM?</p><br /><p class="ans8" id="day2Que8">Click me for Ans</p>
+                          <p>Que.8 What is the DOM?</p><p class="ans8" id="day2Que8">Click me for Ans</p>
 
-                          <p>Que.9  Difference between undefined vs not defined vs NaN</p><br /><p class="ans9" id="day2Que9">Click me for Ans</p>
+                          <p>Que.9  Difference between undefined vs not defined vs NaN</p><p class="ans9" id="day2Que9">Click me for Ans</p>
 
-                          <p>Que.10 Nullish operator </p><br /><p class="ans10" id="day2Que10">Click me for Ans</p>
+                          <p>Que.10 Nullish operator </p><p class="ans10" id="day2Que10">Click me for Ans</p>
  
                         </div>`;
 }
