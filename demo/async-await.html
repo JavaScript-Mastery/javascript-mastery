@@ -7,6 +7,25 @@
     <title>Async/Await</title>
 </head>
 <body>
+   
+    <button id="btn" onclick="addHeading()">Add Heading</button>
+
+    <script>
+      function addHeading() {
+        
+        
+        
+        let headingText = document.createTextNode("MERN stack");
+        newHeading.appendChild(headingText);
+
+        
+        let parent = document.getElementById("btn").parentNode;
+       
+        parent.insertBefore(newHeading, document.getElementById("btn"));
+      }
+    </script>  
+  
+
     <!-- <div id="timer">00:00:00</div>
     <script>
       // Get the timer element
@@ -58,14 +77,14 @@ console.log(firstH1.textContent);
 
     <!-- <script>
         async function a() {
-           await fetch('https://jsonplaceholder.typicode.com/users').then((data)=>data.json().then((res)=>console.log(res)))
+           await fetch('https://jsonbtn.typicode.com/users').then((data)=>data.json().then((res)=>console.log(res)))
         }
         a()
     </script> -->
 
     <!-- <script>
         async function abc() {
-            const myData = await fetch("https://jsonplaceholder.typicode.com/users")            
+            const myData = await fetch("https://jsonbtn.typicode.com/users")            
             console.log(await myData.json());            
         }
         abc();
@@ -73,7 +92,7 @@ console.log(firstH1.textContent);
     <!-- 
     <script>
         function mno() {
-            fetch("https://jsonplaceholder.typicode.com/users").then((data)=>data.json()).then((res)=>{
+            fetch("https://jsonbtn.typicode.com/users").then((data)=>data.json()).then((res)=>{
                 console.log(res);
             })
         }
@@ -82,7 +101,7 @@ console.log(firstH1.textContent);
     <!-- <script>
         function a() {
             
-                fetch("https://jsonplaceholder.typicode.com/users").then((data)=>data.json()).then((res)=>{
+                fetch("https://jsonbtn.typicode.com/users").then((data)=>data.json()).then((res)=>{
                 console.log(res);
             })
             

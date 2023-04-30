@@ -289,14 +289,22 @@ In summary, the creation phase and execution phase in JavaScript refer to the mo
   day1Que6.addEventListener("click", () => {
     day1Que6.style.cssText =
       "background-color:green; padding-top: 15px; padding-bottom: 15px;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-    day1Que6.innerHTML = `In JavaScript, functions are considered "first-class citizens" or "first-class functions," meaning that they are treated like any other value, such as a string or a number. This means that functions can be assigned to variables, passed as arguments to other functions, and returned as values from functions.
-<br /><br />
-Here's an example of a simple first-class function in JavaScript: <br />
-<pre>function multiplyByTwo(num) {
-  return num * 2;
+    day1Que6.innerHTML = `In JavaScript, first class function means that functions can be assigned to variables, passed as arguments to other functions, and returned from functions like any other data type.
+    <br /><br />
+    Here's an example of using a first-class function in JavaScript: <br />
+<pre>// defining a function as a variable
+const add = function(x, y) {
+  return x + y;
 }
 
-let result = multiplyByTwo(5); // returns 10
+// passing a function as an argument to another function
+function calculate(operation, x, y) {
+  return operation(x, y);
+}
+
+const result = calculate(add, 2, 3);
+
+console.log(result);  // result will be 5
 
 </pre>
 
@@ -349,8 +357,8 @@ let result = callWith10(multiplyByTwo); // returns 20
   day1Que7.addEventListener("click", () => {
     day1Que7.style.cssText =
       "background-color:green; padding-top: 15px; padding-bottom: 15px;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-    day1Que7.innerHTML = `A closure is a feature of JavaScript that allows a function to remember and access the variables that were present in the scope (surrounding environment) when the function was created.
-<br /><br />
+    day1Que7.innerHTML = `Closures are used in JavaScript to create private variables and methods, which are not accessible from outside the closure.
+    <br /><br />
 In simpler terms, when a function uses variables from outside of its own scope, those variables are "closed over" by the function and can still be accessed even after the function has finished executing.
 <br /><br />
 Here's an example to illustrate this concept:<br /><pre>function outerFunction() {
@@ -413,23 +421,28 @@ myFunction(); // Output: "Hello World"
 <br /><br />
 Here are some examples to illustrate these concepts:
 <br /><br />
-Using <b>call():</b><br />
+<b style="color: #f1f100; font-family: cursive;">call():</b>is a function that helps you change the context of the invoking function. In layperson's terms, it helps you replace the value of this inside a function with whatever value you want.<br />
 <pre>const person = {
-  firstName: 'Ajay',
-  lastName: 'Doe',
+  firstName: "John",
+  lastName: "Doe",
   fullName: function() {
-    return this.firstName + ' ' + this.lastName;
+    console.log(this.firstName + " " + this.lastName);
   }
 };
 
-const fullName = person.fullName.call({firstName: 'Jane', lastName: 'Doe'});
-console.log(fullName); // Jane Doe
+const person2 = {
+  firstName: "Ajay",
+  lastName: "Dhangar"
+};
+
+
+person.fullName.call(person2); // Output: Jane Doe
 
 </pre>
 <br />
 In this example, we are calling the <i>fullName</i> function of the person object, but we are using <b>call()</b> to set the this context to a new object with a different <i>firstName</i> and <i>lastName</i>. The result is a new <i>fullName</i> string that reflects the new context.
 <br /><br />
-Using <b>apply():</b> <br /><pre>const numbers = [5, 10, 15, 20];
+<b style="color: #f1f100; font-family: cursive;">apply():</b> is very similar to the call function. The only difference is that in apply you can pass an array as an argument list.<br /><pre>const numbers = [5, 10, 15, 20];
 
 const sum = Array.prototype.reduce.apply(numbers, [(a, b) => a + b]);
 console.log(sum); // 50
@@ -438,7 +451,7 @@ console.log(sum); // 50
 <br />
 In this example, we are using apply() to call the reduce() function on the numbers array, but we are passing in the reduce() function as the this context, and we are passing in an array of arguments as the second argument to apply(). This allows us to sum up all the numbers in the array using the reduce() function.
 <br /><br />
-Using <b>bind():</b> <br /><pre>const person = {
+<b style="color: #f1f100; font-family: cursive;">bind():</b> is a function that helps you create another function that you can execute later with the new context of this that is provided. <br /><pre>const person = {
   firstName: 'Ajay',
   lastName: 'Doe',
   fullName: function() {
@@ -666,8 +679,7 @@ person1.greet(); // Output: Hello, my name is Ajay and I'm 30 years old.
   day1Que12.addEventListener("click", () => {
     day1Que12.style.cssText =
       "background-color:green; padding-top: 15px; padding-bottom: 15px;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-    day1Que12.innerHTML = `In JavaScript, every object has a property called __proto__, which refers to its prototype object. The prototype object, in turn, may also have a __proto__ property that refers to its own prototype, creating a chain of objects linked together in a prototype chain.
-<br /> <br />
+    day1Que12.innerHTML = `In JavaScript, every object has a property called prototype which refers to another object. This creates a chain of objects, where each object's prototype is another object. This is called the prototype chain.<br /> <br />
 When you access a property of an object, JavaScript looks for the property in the object itself. If the property is not found, it looks in the object's prototype, then in the prototype's prototype, and so on until it either finds the property or reaches the end of the prototype chain.
 <br /><br />
 Here is an example code that demonstrates the prototype chain in JavaScript: <br />
@@ -1047,26 +1059,26 @@ fetchData()
   day2Que6.addEventListener("click", () => {
     day2Que6.style.cssText =
       "background-color:green; padding-top: 15px; padding-bottom: 15px;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-    day2Que6.innerHTML = `<b style="color: #f1f100; font-family: cursive;">Async/await</b> is a modern syntax for writing asynchronous code in JavaScript that allows you to write code that looks and behaves like synchronous code. It makes it easier to write, read, and debug asynchronous code by reducing the complexity of handling asynchronous operations.
-<br /><br />
-In traditional asynchronous programming, callbacks or promises are used to handle asynchronous code, which can lead to nested callbacks or complex chains of <b style="color: #f1f100; font-family: cursive;">then()</b> functions. <b style="color: #f1f100; font-family: cursive;">Async/await</b> simplifies this by allowing you to write code that waits for a promise to resolve or reject before moving on to the next line of code, similar to the way synchronous code is executed.
-<br /><br />
-The <b style="color: #f1f100; font-family: cursive;">async</b> keyword is used to define an asynchronous function that returns a promise, and the <b style="color: #f1f100; font-family: cursive;">await</b> keyword is used to wait for a promise to resolve or reject before continuing with the execution of the code. When the promise is resolved, the value is returned, and when the promise is rejected, an error is thrown.
-<br /><br />
-<b style="color: #f1f100; font-family: cursive;">Async/await</b> helps to avoid the common pitfalls of traditional asynchronous programming, such as callback hell and pyramid of doom, and makes it easier to write clean, readable, and maintainable code.<br /><pre>function getData() {
-  return new Promise(resolve => {
-    setTimeout(() => {
-      resolve("Data fetched");
-    }, 2000);
-  });
+    day2Que6.innerHTML = `<b style="color: #f1f100; font-family: cursive;">Async/await</b> is a feature in JavaScript that allows asynchronous code to be written in a synchronous style. This makes it easier to write and read code that deals with promises, which are a way to handle asynchronous operations in JavaScript.
+    <br /><br />
+    The async keyword is used to define a function that returns a promise, while the await keyword is used to wait for a promise to resolve. <br /> Here's an example:
+<pre>async function getData() {
+  const response = await fetch('https://api.example.com/data');
+  const data = await response.json();
+  return data;
 }
 
-async function displayData() {
-  const data = await getData();
-  console.log(data);
-}
+console.log(getData());
 
-displayData();
+</pre>
+Now, let's see what happens when we don't use async and await:
+<br />
+<pre>function getData() {
+  fetch('https://api.example.com/data')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error(error));
+}
 
 </pre>`;
     day2Que1.style.cssText =
@@ -1925,601 +1937,384 @@ if (myOtherValue === undefined) {
     day3Que2.innerHTML = `Click me for Ans`;
   });
 });
-// btn4.addEventListener("click", () => {
-//   hello.style.display = "none";
-//   btnFour();
-//   let day4Que1 = document.getElementById("day4Que1");
-//   let day4Que2 = document.getElementById("day4Que2");
-//   let day4Que3 = document.getElementById("day4Que3");
-//   let day4Que4 = document.getElementById("day4Que4");
-//   let day4Que5 = document.getElementById("day4Que5");
-//   let day4Que6 = document.getElementById("day4Que6");
-//   let day4Que7 = document.getElementById("day4Que7");
-//   let day4Que8 = document.getElementById("day4Que8");
-//   let day4Que9 = document.getElementById("day4Que9");
-//   let day4Que10 = document.getElementById("day4Que10");
+btn4.addEventListener("click", () => {
+  hello.style.display = "none";
+  btnFour();
+  let day4Que1 = document.getElementById("day4Que1");
+  let day4Que2 = document.getElementById("day4Que2");
+  let day4Que3 = document.getElementById("day4Que3");
+  let day4Que4 = document.getElementById("day4Que4");
+  let day4Que5 = document.getElementById("day4Que5");
+  let day4Que6 = document.getElementById("day4Que6");
+  let day4Que7 = document.getElementById("day4Que7");
+  let day4Que8 = document.getElementById("day4Que8");
+  let day4Que9 = document.getElementById("day4Que9");
+  let day4Que10 = document.getElementById("day4Que10");
 
-//   day4Que1.addEventListener("click", () => {
-//     // alert("Read Carefully");
-//     day4Que1.style.cssText =
-//       "background-color:green; padding-top: 15px; padding-bottom: 15px;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que1.innerHTML = `
-//     Inheritance in JavaScript refers to the concept of creating new objects based on an existing object. The new object, also known as the child object, inherits properties and methods from the existing object, known as the parent object.
-// <br /><br />
-// One way to implement inheritance in JavaScript is by using function constructors. A function constructor is a function that is used to create new objects. To create a child object that inherits from a parent object using function constructors, we can use the Object.create() method.
-// <br /><br />
-// Here's an example: <br /><pre>
-// // Parent function constructor
-// function Person(name, age) {
-//   this.name = name;
-//   this.age = age;
-// }
+  day4Que1.addEventListener("click", () => {
+    // alert("Read Carefully");
+    day4Que1.style.cssText =
+      "background-color:green; padding-top: 15px; padding-bottom: 15px;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que1.innerHTML = `In JavaScript, a symbol is a unique and immutable data type that can be used as an identifier for variables. <br /><br /> Here's an example code snippet:<pre>const name1 = Symbol('Ajay');
+const name2 = Symbol('Ajay');
 
-// // Child function constructor
-// function Employee(name, age, jobTitle) {
-//   Person.call(this, name, age);
-//   this.jobTitle = jobTitle;
-// }
+console.log(name1===name2); // false
+console.log(typeof name1); //symbol
 
-// // Inherit from parent prototype
-// Employee.prototype = Object.create(Person.prototype);
+</pre>`;
+    day4Que2.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que2.innerHTML = `Click me for Ans`;
+    day4Que3.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que3.innerHTML = `Click me for Ans`;
+    day4Que4.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que4.innerHTML = `Click me for Ans`;
+    day4Que5.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que5.innerHTML = `Click me for Ans`;
+    day4Que6.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que6.innerHTML = `Click me for Ans`;
+    day4Que7.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que7.innerHTML = `Click me for Ans`;
+    day4Que8.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que8.innerHTML = `Click me for Ans`;
+    day4Que9.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que9.innerHTML = `Click me for Ans`;
+    day4Que10.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que10.innerHTML = `Click me for Ans`;
+  });
+  day4Que2.addEventListener("click", () => {
+    day4Que2.style.cssText =
+      "background-color:green; padding-top: 15px; padding-bottom: 15px;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que2.innerHTML = `Map and filter are two methods in JavaScript that allow you to manipulate arrays easily.
+<br /><br />
+Map creates a new array by applying a function to each element in the original array. Here's an example: 
+<pre>
+const numbers = [1, 2, 3, 4, 5];
+const doubledNumbers = numbers.map(num => num * 2);
+console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
 
-// // Child method
-// Employee.prototype.introduce = function() {
-//   console.log("Hi, my name is " + this.name + ", and I work as a " + this.jobTitle + ".");
-// };
+</pre>
+Filter, on the other hand, creates a new array containing only the elements that pass a certain test. Here's an example:
+<pre>const numbers = [1, 2, 3, 4, 5];
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log(evenNumbers); // Output: [2, 4]
 
-// // Create a new Employee object
-// var employee1 = new Employee("Ajay", 22, "Software Engineer");
+</pre>`;
+    day4Que1.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que1.innerHTML = `Click me for Ans`;
+    day4Que3.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que3.innerHTML = `Click me for Ans`;
+    day4Que4.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que4.innerHTML = `Click me for Ans`;
+    day4Que5.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que5.innerHTML = `Click me for Ans`;
+    day4Que6.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que6.innerHTML = `Click me for Ans`;
+    day4Que7.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que7.innerHTML = `Click me for Ans`;
+    day4Que8.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que8.innerHTML = `Click me for Ans`;
+    day4Que9.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que9.innerHTML = `Click me for Ans`;
+    day4Que10.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que10.innerHTML = `Click me for Ans`;
+  });
+  day4Que3.addEventListener("click", () => {
+    day4Que3.style.cssText =
+      "background-color:green; padding-top: 15px; padding-bottom: 15px;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que3.innerHTML = `In JavaScript, when you pass a variable to a function, it can be passed by value or by reference.
+<br /><br />
+When a variable is passed by value, a copy of the value is created and passed to the function. This means that any changes made to the parameter within the function will not affect the original variable.
+<br /><br />
+Here's an example:
+<pre>function updateValue(value) {
+  value = 2;
+}
 
-// // Call parent and child methods
-// console.log(employee1.name); // output: "Ajay"
-// console.log(employee1.age); // output: 22
-// employee1.introduce(); // output: "Hi, my name is Ajay, and I work as a Software Engineer."
+let num = 1;
+updateValue(num);
+console.log(num); // Output: 1
 
-// </pre>`;
-//     day4Que2.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que2.innerHTML = `Click me for Ans`;
-//     day4Que3.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que3.innerHTML = `Click me for Ans`;
-//     day4Que4.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que4.innerHTML = `Click me for Ans`;
-//     day4Que5.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que5.innerHTML = `Click me for Ans`;
-//     day4Que6.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que6.innerHTML = `Click me for Ans`;
-//     day4Que7.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que7.innerHTML = `Click me for Ans`;
-//     day4Que8.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que8.innerHTML = `Click me for Ans`;
-//     day4Que9.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que9.innerHTML = `Click me for Ans`;
-//     day4Que10.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que10.innerHTML = `Click me for Ans`;
-//   });
-//   day4Que2.addEventListener("click", () => {
-//     day4Que2.style.cssText =
-//       "background-color:green; padding-top: 15px; padding-bottom: 15px;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que2.innerHTML = `In JavaScript, a callback is a function that is passed as an argument to another function and is executed after some event or task is completed.
-//     <br /> <pre>
-// function getUserData(userId, callback) {
-//   // Make a request to get user data
-//   // Once the data is received, call the callback function with the data
-//   const userData = { name: "Ajay", age: 30, email: "Ajay@example.com" };
-//   callback(userData);
-// }
+</pre>
+On the other hand, when a variable is passed by reference, a reference to the variable is passed to the function. This means that any changes made to the parameter within the function will affect the original variable.
+<br /><br />
+Here's an example:
+<pre>function updateArray(array) {
+  array.push(4);
+}
 
-// // Define a callback function to process the user data
-// function processUserData(userData) {
-//   console.log("Name:", userData.name);
-//   console.log("Age:", userData.age);
-//   console.log("Email:", userData.email);
-// }
+let arr = [1, 2, 3];
+updateArray(arr);
+console.log(arr); // Output: [1, 2, 3, 4]
+</pre>`;
+    day4Que1.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que1.innerHTML = `Click me for Ans`;
+    day4Que2.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que2.innerHTML = `Click me for Ans`;
+    day4Que4.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que4.innerHTML = `Click me for Ans`;
+    day4Que5.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que5.innerHTML = `Click me for Ans`;
+    day4Que6.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que6.innerHTML = `Click me for Ans`;
+    day4Que7.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que7.innerHTML = `Click me for Ans`;
+    day4Que8.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que8.innerHTML = `Click me for Ans`;
+    day4Que9.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que9.innerHTML = `Click me for Ans`;
+    day4Que10.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que10.innerHTML = `Click me for Ans`;
+  });
+  day4Que4.addEventListener("click", () => {
+    day4Que4.style.cssText =
+      "background-color:green; padding-top: 15px; padding-bottom: 15px;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que4.innerHTML = ``;
+    day4Que1.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que1.innerHTML = `Click me for Ans`;
+    day4Que3.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que3.innerHTML = `Click me for Ans`;
+    day4Que2.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que2.innerHTML = `Click me for Ans`;
+    day4Que5.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que5.innerHTML = `Click me for Ans`;
+    day4Que6.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que6.innerHTML = `Click me for Ans`;
+    day4Que7.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que7.innerHTML = `Click me for Ans`;
+    day4Que8.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que8.innerHTML = `Click me for Ans`;
+    day4Que9.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que9.innerHTML = `Click me for Ans`;
+    day4Que10.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que10.innerHTML = `Click me for Ans`;
+  });
+  day4Que5.addEventListener("click", () => {
+    day4Que5.style.cssText =
+      "background-color:green; padding-top: 15px; padding-bottom: 15px;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que5.innerHTML = ``;
+    day4Que1.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que1.innerHTML = `Click me for Ans`;
+    day4Que3.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que3.innerHTML = `Click me for Ans`;
+    day4Que4.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que4.innerHTML = `Click me for Ans`;
+    day4Que2.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que2.innerHTML = `Click me for Ans`;
+    day4Que6.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que6.innerHTML = `Click me for Ans`;
+    day4Que7.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que7.innerHTML = `Click me for Ans`;
+    day4Que8.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que8.innerHTML = `Click me for Ans`;
+    day4Que9.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que9.innerHTML = `Click me for Ans`;
+    day4Que10.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que10.innerHTML = `Click me for Ans`;
+  });
+  day4Que6.addEventListener("click", () => {
+    day4Que6.style.cssText =
+      "background-color:green; padding-top: 15px; padding-bottom: 15px;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que6.innerHTML = ``;
+    day4Que1.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que1.innerHTML = `Click me for Ans`;
+    day4Que3.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que3.innerHTML = `Click me for Ans`;
+    day4Que4.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que4.innerHTML = `Click me for Ans`;
+    day4Que5.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que5.innerHTML = `Click me for Ans`;
+    day4Que2.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que2.innerHTML = `Click me for Ans`;
+    day4Que7.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que7.innerHTML = `Click me for Ans`;
+    day4Que8.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que8.innerHTML = `Click me for Ans`;
+    day4Que9.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que9.innerHTML = `Click me for Ans`;
+    day4Que10.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que10.innerHTML = `Click me for Ans`;
+  });
+  day4Que7.addEventListener("click", () => {
+    day4Que7.style.cssText =
+      "background-color:green; padding-top: 15px; padding-bottom: 15px;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que7.innerHTML = ``;
+    day4Que1.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que1.innerHTML = `Click me for Ans`;
+    day4Que3.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que3.innerHTML = `Click me for Ans`;
+    day4Que4.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que4.innerHTML = `Click me for Ans`;
+    day4Que5.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que5.innerHTML = `Click me for Ans`;
+    day4Que6.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que6.innerHTML = `Click me for Ans`;
+    day4Que2.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que2.innerHTML = `Click me for Ans`;
+    day4Que8.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que8.innerHTML = `Click me for Ans`;
+    day4Que9.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que9.innerHTML = `Click me for Ans`;
+    day4Que10.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que10.innerHTML = `Click me for Ans`;
+  });
+  day4Que8.addEventListener("click", () => {
+    day4Que8.style.cssText =
+      "background-color:green; padding-top: 15px; padding-bottom: 15px;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que8.innerHTML = ``;
+    day4Que1.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que1.innerHTML = `Click me for Ans`;
+    day4Que3.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que3.innerHTML = `Click me for Ans`;
+    day4Que4.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que4.innerHTML = `Click me for Ans`;
+    day4Que5.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que5.innerHTML = `Click me for Ans`;
+    day4Que6.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que6.innerHTML = `Click me for Ans`;
+    day4Que7.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que7.innerHTML = `Click me for Ans`;
+    day4Que2.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que2.innerHTML = `Click me for Ans`;
+    day4Que9.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que9.innerHTML = `Click me for Ans`;
+    day4Que10.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que10.innerHTML = `Click me for Ans`;
+  });
+  day4Que9.addEventListener("click", () => {
+    day4Que9.style.cssText =
+      "background-color:green; padding-top: 15px; padding-bottom: 15px;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que9.innerHTML = ``;
 
-// // Call the getUserData function with the user ID and the callback function
-// getUserData(123, processUserData);
-
-// </pre>`;
-//     day4Que1.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que1.innerHTML = `Click me for Ans`;
-//     day4Que3.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que3.innerHTML = `Click me for Ans`;
-//     day4Que4.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que4.innerHTML = `Click me for Ans`;
-//     day4Que5.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que5.innerHTML = `Click me for Ans`;
-//     day4Que6.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que6.innerHTML = `Click me for Ans`;
-//     day4Que7.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que7.innerHTML = `Click me for Ans`;
-//     day4Que8.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que8.innerHTML = `Click me for Ans`;
-//     day4Que9.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que9.innerHTML = `Click me for Ans`;
-//     day4Que10.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que10.innerHTML = `Click me for Ans`;
-//   });
-//   day4Que3.addEventListener("click", () => {
-//     day4Que3.style.cssText =
-//       "background-color:green; padding-top: 15px; padding-bottom: 15px;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que3.innerHTML = `<b style="color: #f1f100; font-family: cursive;">setTimeout()</b> is a JavaScript function that allows you to schedule a function to be executed after a certain amount of time has passed. The function takes two parameters: the first is the function you want to execute, and the second is the time delay in milliseconds.
-// <br /><br />
-// Here's an example code that uses <b style="color: #f1f100; font-family: cursive;">setTimeout():</b> <br />
-// <pre>
-// function greeting() {
-//   console.log("Hello, world!");
-// }
-
-// setTimeout(greeting, 2000);
-// greeting()
-
-// </pre>
-// <p align="center"><b>OR</b></p> <br /><pre>console.log("Before setTimeout");
-
-// setTimeout(function() {
-//   console.log("Hello, world!");
-// }, 1000);
-
-// console.log("After setTimeout");
-
-// </pre>`;
-//     day4Que1.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que1.innerHTML = `Click me for Ans`;
-//     day4Que2.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que2.innerHTML = `Click me for Ans`;
-//     day4Que4.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que4.innerHTML = `Click me for Ans`;
-//     day4Que5.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que5.innerHTML = `Click me for Ans`;
-//     day4Que6.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que6.innerHTML = `Click me for Ans`;
-//     day4Que7.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que7.innerHTML = `Click me for Ans`;
-//     day4Que8.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que8.innerHTML = `Click me for Ans`;
-//     day4Que9.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que9.innerHTML = `Click me for Ans`;
-//     day4Que10.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que10.innerHTML = `Click me for Ans`;
-//   });
-//   day4Que4.addEventListener("click", () => {
-//     day4Que4.style.cssText =
-//       "background-color:green; padding-top: 15px; padding-bottom: 15px;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que4.innerHTML = `In JavaScript, the <b style="color: #f1f100; font-family: cursive;">event loop</b> and <b style="color: #f1f100; font-family: cursive;">call stack</b> are two key concepts that determine how code is executed in the language.
-// <br /><br />
-// The <b style="color: #f1f100; font-family: cursive;">call stack</b> is a data structure that keeps track of the function calls in a program. Whenever a function is called, it is added to the top of the <b style="color: #f1f100; font-family: cursive;">call stack</b>, and when the function completes, it is removed from the top of the stack. This allows JavaScript to keep track of where it is in a program's execution and which function to return to after the current one finishes.
-// <br /><br />
-// Here's an example of a <b style="color: #f1f100; font-family: cursive;">call stack</b> in action: <br /> <pre>function greet(name) {
-//   console.log("Hello, " + name + "!");
-// }
-
-// function sayHello() {
-//   const name = "Ajay";
-//   greet(name);
-// }
-
-// sayHello(); // "Hello, Ajay!"
-
-// </pre>
-
-// The <b style="color: #f1f100; font-family: cursive;">event loop</b> is a mechanism that allows JavaScript to handle asynchronous code, such as waiting for user input or network requests. The <b style="color: #f1f100; font-family: cursive;">event loop</b> constantly checks for any events that need to be processed, and when it finds one, it adds it to a queue.
-// <br /><br />
-// Here's an example of the <b style="color: #f1f100; font-family: cursive;">event loop</b> in action: <br /><pre>console.log("Start");
-
-// setTimeout(function() {
-//   console.log("First timeout");
-// }, 1000);
-
-// setTimeout(function() {
-//   console.log("Second timeout");
-// }, 500);
-
-// console.log("End");
-
-// </pre>`;
-//     day4Que1.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que1.innerHTML = `Click me for Ans`;
-//     day4Que3.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que3.innerHTML = `Click me for Ans`;
-//     day4Que2.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que2.innerHTML = `Click me for Ans`;
-//     day4Que5.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que5.innerHTML = `Click me for Ans`;
-//     day4Que6.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que6.innerHTML = `Click me for Ans`;
-//     day4Que7.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que7.innerHTML = `Click me for Ans`;
-//     day4Que8.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que8.innerHTML = `Click me for Ans`;
-//     day4Que9.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que9.innerHTML = `Click me for Ans`;
-//     day4Que10.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que10.innerHTML = `Click me for Ans`;
-//   });
-//   day4Que5.addEventListener("click", () => {
-//     day4Que5.style.cssText =
-//       "background-color:green; padding-top: 15px; padding-bottom: 15px;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que5.innerHTML = `<b style="color: #f1f100; font-family: cursive;">Promises</b> are a way to handle asynchronous operations in JavaScript. In simpler terms, they allow you to handle code that may take some time to execute without blocking the rest of your code.
-// <br /><br />
-// A <b style="color: #f1f100; font-family: cursive;">Promise</b> represents a value that may not be available yet, but will be at some point in the future. It is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
-// <br /><br />
-// To create a Promise, you can use the <b style="color: #f1f100; font-family: cursive;">Promise</b> constructor. It takes a single argument, which is a function called the "executor". This function takes two parameters, <b style="color: #f1f100; font-family: cursive;">resolve</b> and <b style="color: #f1f100; font-family: cursive;">reject</b>, which are functions that are called when the Promise is resolved or rejected, respectively.
-// <br /><br />
-// Here's an example of creating and using a Promise in JavaScript: <br /><pre>const myPromise = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     const result = 42;
-//     resolve(result);
-//   }, 1000);
-// });
-
-// myPromise.then((result) => {
-//   console.log(&#x27;The answer is &#x24;{result}&#x27;);
-// }).catch((error) => {
-//   console.error(&#x27;There was an error: &#x24;{error}&#x27;);
-// });
-
-// </pre>
-// <p align="center">OR</p> <pre>const fetchData = () => {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       const data = ['apple', 'banana', 'orange'];
-//       if (data) {
-//         resolve(data);
-//       } else {
-//         reject('Error: Data not found');
-//       }
-//     }, 2000);
-//   });
-// };
-
-// fetchData()
-//   .then((data) => console.log(data))
-//   .catch((error) => console.log(error));
-
-//   </pre>`;
-//     day4Que1.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que1.innerHTML = `Click me for Ans`;
-//     day4Que3.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que3.innerHTML = `Click me for Ans`;
-//     day4Que4.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que4.innerHTML = `Click me for Ans`;
-//     day4Que2.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que2.innerHTML = `Click me for Ans`;
-//     day4Que6.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que6.innerHTML = `Click me for Ans`;
-//     day4Que7.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que7.innerHTML = `Click me for Ans`;
-//     day4Que8.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que8.innerHTML = `Click me for Ans`;
-//     day4Que9.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que9.innerHTML = `Click me for Ans`;
-//     day4Que10.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que10.innerHTML = `Click me for Ans`;
-//   });
-//   day4Que6.addEventListener("click", () => {
-//     day4Que6.style.cssText =
-//       "background-color:green; padding-top: 15px; padding-bottom: 15px;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que6.innerHTML = `<b style="color: #f1f100; font-family: cursive;">Async/await</b> is a modern syntax for writing asynchronous code in JavaScript that allows you to write code that looks and behaves like synchronous code. It makes it easier to write, read, and debug asynchronous code by reducing the complexity of handling asynchronous operations.
-// <br /><br />
-// In traditional asynchronous programming, callbacks or promises are used to handle asynchronous code, which can lead to nested callbacks or complex chains of <b style="color: #f1f100; font-family: cursive;">then()</b> functions. <b style="color: #f1f100; font-family: cursive;">Async/await</b> simplifies this by allowing you to write code that waits for a promise to resolve or reject before moving on to the next line of code, similar to the way synchronous code is executed.
-// <br /><br />
-// The <b style="color: #f1f100; font-family: cursive;">async</b> keyword is used to define an asynchronous function that returns a promise, and the <b style="color: #f1f100; font-family: cursive;">await</b> keyword is used to wait for a promise to resolve or reject before continuing with the execution of the code. When the promise is resolved, the value is returned, and when the promise is rejected, an error is thrown.
-// <br /><br />
-// <b style="color: #f1f100; font-family: cursive;">Async/await</b> helps to avoid the common pitfalls of traditional asynchronous programming, such as callback hell and pyramid of doom, and makes it easier to write clean, readable, and maintainable code.<br /><pre>function getData() {
-//   return new Promise(resolve => {
-//     setTimeout(() => {
-//       resolve("Data fetched");
-//     }, 2000);
-//   });
-// }
-
-// async function displayData() {
-//   const data = await getData();
-//   console.log(data);
-// }
-
-// displayData();
-
-// </pre>`;
-//     day4Que1.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que1.innerHTML = `Click me for Ans`;
-//     day4Que3.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que3.innerHTML = `Click me for Ans`;
-//     day4Que4.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que4.innerHTML = `Click me for Ans`;
-//     day4Que5.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que5.innerHTML = `Click me for Ans`;
-//     day4Que2.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que2.innerHTML = `Click me for Ans`;
-//     day4Que7.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que7.innerHTML = `Click me for Ans`;
-//     day4Que8.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que8.innerHTML = `Click me for Ans`;
-//     day4Que9.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que9.innerHTML = `Click me for Ans`;
-//     day4Que10.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que10.innerHTML = `Click me for Ans`;
-//   });
-//   day4Que7.addEventListener("click", () => {
-//     day4Que7.style.cssText =
-//       "background-color:green; padding-top: 15px; padding-bottom: 15px;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que7.innerHTML = `<b style="color: #f1f100; font-family: cursive;">Hoisting</b> is a behavior in JavaScript where variable and function declarations are moved to the top of their respective scopes during the compilation phase, before the code is actually executed. This means that even if a variable or function is declared after it is used, it can still be accessed.
-// <br /><br />
-// For example, consider the following code snippet: <br /><pre>
-// x = 5;
-// console.log(x);
-// var x;
-
-// </pre>
-// In this code, <b style="color: #f1f100; font-family: cursive;">x</b> is assigned the value of <b style="color: #f1f100; font-family: cursive;">5</b> before it is declared. However, because of hoisting, the variable declaration is moved to the top of the scope, so the code is interpreted as:
-// <pre>var x;
-// x = 5;
-
-// console.log(x);
-
-// </pre>
-// As a result, the output of this code will be <b style="color: #f1f100; font-family: cursive;">5</b>, even though the assignment comes before the declaration.
-// <br /><br />
-// Similarly, hoisting also applies to function declarations. For example: <br /><pre>myFunction();
-
-// function myFunction() {
-//   console.log("Hello!");
-// }
-
-// </pre>
-// In this code, <b style="color: #f1f100; font-family: cursive;">myFunction()</b> is called before it is declared. However, because of hoisting, the function declaration is moved to the top of the scope, so the code is interpreted as:
-// <pre>function myFunction() {
-//   console.log("Hello!");
-// }
-
-// myFunction();
-
-// </pre>
-// As a result, the output of this code will be <b style="color: #f1f100; font-family: cursive;">Hello!</b>
-// `;
-//     day4Que1.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que1.innerHTML = `Click me for Ans`;
-//     day4Que3.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que3.innerHTML = `Click me for Ans`;
-//     day4Que4.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que4.innerHTML = `Click me for Ans`;
-//     day4Que5.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que5.innerHTML = `Click me for Ans`;
-//     day4Que6.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que6.innerHTML = `Click me for Ans`;
-//     day4Que2.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que2.innerHTML = `Click me for Ans`;
-//     day4Que8.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que8.innerHTML = `Click me for Ans`;
-//     day4Que9.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que9.innerHTML = `Click me for Ans`;
-//     day4Que10.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que10.innerHTML = `Click me for Ans`;
-//   });
-//   day4Que8.addEventListener("click", () => {
-//     day4Que8.style.cssText =
-//       "background-color:green; padding-top: 15px; padding-bottom: 15px;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que8.innerHTML = `The DOM stands for Document Object Model, and it's a way for web developers to interact with and manipulate HTML and XML documents using JavaScript.
-// <br /><br />
-// Here's a simple example code snippet that demonstrates how you can use JavaScript to access and modify the DOM: <br /><pre>
-// &lt;!DOCTYPE html>
-// &lt;html>
-// &lt;head>
-// 	&lt;title>My Webpage&lt;/title>
-// &lt;/head>
-// &lt;body>
-// 	&lt;h1>Welcome to my webpage!&lt;/h1>
-// 	&lt;p>Here's some text for you to read.&lt;/p>
-
-// 	&lt;script>
-// 		// Select the first &lt;p> element on the page
-// 		var pElement = document.querySelector('p');
-
-// 		// Change the text inside the &lt;p> element
-// 		pElement.textContent = 'This is new text!';
-
-// 		// Create a new &lt;button> element
-// 		var buttonElement = document.createElement('button');
-
-// 		// Add some text to the button
-// 		buttonElement.textContent = 'Click me!';
-
-// 		// Append the button to the end of the &lt;body> element
-// 		document.body.appendChild(buttonElement);
-// 	&lt;/script>
-// &lt;/body>
-// &lt;/html>
-// </pre>`;
-//     day4Que1.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que1.innerHTML = `Click me for Ans`;
-//     day4Que3.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que3.innerHTML = `Click me for Ans`;
-//     day4Que4.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que4.innerHTML = `Click me for Ans`;
-//     day4Que5.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que5.innerHTML = `Click me for Ans`;
-//     day4Que6.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que6.innerHTML = `Click me for Ans`;
-//     day4Que7.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que7.innerHTML = `Click me for Ans`;
-//     day4Que2.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que2.innerHTML = `Click me for Ans`;
-//     day4Que9.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que9.innerHTML = `Click me for Ans`;
-//     day4Que10.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que10.innerHTML = `Click me for Ans`;
-//   });
-//   day4Que9.addEventListener("click", () => {
-//     day4Que9.style.cssText =
-//       "background-color:green; padding-top: 15px; padding-bottom: 15px;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que9.innerHTML = `<b style="color: #f1f100; font-family: cursive;">Undefined: </b><br />
-// Undefined is a primitive value in JavaScript that is automatically assigned to a variable that has been declared but not initialized. It indicates the absence of a value.
-// <br /><br />Example:<pre>let x;
-// console.log(x); // Output: undefined
-
-// </pre>
-// <b style="color: #f1f100; font-family: cursive;">Not Defined:</b> <br />
-// A variable that has not been declared or initialized in a program is said to be not defined. Attempting to access such a variable will result in a ReferenceError.
-// <br /><br /> Example:
-// <pre>console.log(y); // Output: ReferenceError: y is not defined
-
-// </pre>
-
-// <b style="color: #f1f100; font-family: cursive;">NaN:</b><br />
-// NaN stands for "Not a Number". It is a special value in JavaScript that is returned when a mathematical operation fails to produce a meaningful result.
-// <br /><br /> Example: <pre>let x = "Hello";
-// let y = parseInt(x);
-// console.log(y); // Output: NaN
-
-// </pre>
-// `;
-
-//     day4Que1.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que1.innerHTML = `Click me for Ans`;
-//     day4Que3.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que3.innerHTML = `Click me for Ans`;
-//     day4Que4.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que4.innerHTML = `Click me for Ans`;
-//     day4Que5.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que5.innerHTML = `Click me for Ans`;
-//     day4Que6.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que6.innerHTML = `Click me for Ans`;
-//     day4Que7.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que7.innerHTML = `Click me for Ans`;
-//     day4Que8.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que8.innerHTML = `Click me for Ans`;
-//     day4Que2.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que2.innerHTML = `Click me for Ans`;
-//     day4Que10.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que10.innerHTML = `Click me for Ans`;
-//   });
-//   day4Que10.addEventListener("click", () => {
-//     day4Que10.style.cssText =
-//       "background-color:green; padding-top: 15px; padding-bottom: 15px;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que10.innerHTML = `The <b style="color: #f1f100; font-family: cursive;">nullish</b> operator (<b style="color: #f1f100; font-family: cursive;">??</b>) is a new operator introduced in <b style="color: #f1f100; font-family: cursive;">ECMAScript 2020</b> that allows you to check if a value is <b style="color: #f1f100; font-family: cursive;">null</b> or <b style="color: #f1f100; font-family: cursive;">undefined</b>. It's similar to the logical OR (||) operator, but with one key difference: the nullish operator only returns the right-hand side operand if the left-hand side operand is null or undefined.
-// <br /><br />
-// Here's an example:<pre>const myVariable = null;
-// const myValue = myVariable ?? 'defaultValue';
-
-// console.log(myValue); // Output: defaultValue
-// </pre>
-
-// In this example, the value of <b style="color: #f1f100; font-family: cursive;">myVariable</b> is null, so the nullish operator returns the default value <b style="color: #f1f100; font-family: cursive;">'defaultValue'</b>.
-// <br /><br />
-// Now let's see what happens when the left-hand side operand is not null or undefined: <pre>const myVariable = 0;
-// const myValue = myVariable ?? 'defaultValue';
-
-// console.log(myValue); // Output: 0
-
-// </pre>
-// `;
-//     day4Que1.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que1.innerHTML = `Click me for Ans`;
-//     day4Que3.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que3.innerHTML = `Click me for Ans`;
-//     day4Que4.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que4.innerHTML = `Click me for Ans`;
-//     day4Que5.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que5.innerHTML = `Click me for Ans`;
-//     day4Que6.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que6.innerHTML = `Click me for Ans`;
-//     day4Que7.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que7.innerHTML = `Click me for Ans`;
-//     day4Que8.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que8.innerHTML = `Click me for Ans`;
-//     day4Que9.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que9.innerHTML = `Click me for Ans`;
-//     day4Que2.style.cssText =
-//       "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
-//     day4Que2.innerHTML = `Click me for Ans`;
-//   });
-// });
+    day4Que1.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que1.innerHTML = `Click me for Ans`;
+    day4Que3.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que3.innerHTML = `Click me for Ans`;
+    day4Que4.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que4.innerHTML = `Click me for Ans`;
+    day4Que5.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que5.innerHTML = `Click me for Ans`;
+    day4Que6.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que6.innerHTML = `Click me for Ans`;
+    day4Que7.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que7.innerHTML = `Click me for Ans`;
+    day4Que8.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que8.innerHTML = `Click me for Ans`;
+    day4Que2.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que2.innerHTML = `Click me for Ans`;
+    day4Que10.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que10.innerHTML = `Click me for Ans`;
+  });
+  day4Que10.addEventListener("click", () => {
+    day4Que10.style.cssText =
+      "background-color:green; padding-top: 15px; padding-bottom: 15px;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que10.innerHTML = ``;
+    day4Que1.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que1.innerHTML = `Click me for Ans`;
+    day4Que3.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que3.innerHTML = `Click me for Ans`;
+    day4Que4.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que4.innerHTML = `Click me for Ans`;
+    day4Que5.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que5.innerHTML = `Click me for Ans`;
+    day4Que6.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que6.innerHTML = `Click me for Ans`;
+    day4Que7.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que7.innerHTML = `Click me for Ans`;
+    day4Que8.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que8.innerHTML = `Click me for Ans`;
+    day4Que9.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que9.innerHTML = `Click me for Ans`;
+    day4Que2.style.cssText =
+      "background-color:rgb(104, 104, 222); padding-top: auto; padding-bottom: auto;font-family: Sans-serif; font-size: 18px;line-height: 30px;";
+    day4Que2.innerHTML = `Click me for Ans`;
+  });
+});

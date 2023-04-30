@@ -2,22 +2,54 @@
 <html>
 <head>
 	<title>Simple Calculator</title>
+	<style>
+		body{
+			background-color: #e3e6e9;
+		}
+		.container{	
+			margin-top: 100px;		
+			padding-left: 20%;
+			padding-right: 20%;			
+		}
+		.main{
+			
+			background-color: rgb(222, 231, 167);
+			padding: 5px;
+			padding-left: 15px;
+			border-radius: 30px;
+			border: 2px solid red;
+			box-shadow: 4px 4px #645454;
+		}
+		.input-values{
+			margin-left: 40px;
+		}
+		#result{
+			color: green;
+		}
+	</style>
 </head>
 <body>
-	<h1>Simple Calculator</h1>
-	<label for="num1">Number 1:</label>
-	<input type="text" id="num1"><br><br>
-	<label for="num2">Number 2:</label>
-	<input type="text" id="num2"><br><br>
-	<label for="operation">Operation:</label>
-	<select id="operation">
-		<option value="add">+</option>
-		<option value="subtract">-</option>
-		<option value="multiply">*</option>
-		<option value="divide">/</option>
-	</select><br><br>
-	<button onclick="calculate()">Calculate</button><br><br>
-	<p id="result"></p>
+	<div class="container">
+		<div class="main">
+			<h1>Simple Calculator</h1>
+			<div class="input-values">
+				<label for="num1">Number 1:</label>
+	            <input type="text" id="num1"><br><br>
+	            <label for="num2">Number 2:</label>
+	            <input type="text" id="num2"><br><br>
+	            <label for="operation">Operation:</label>
+	            <select id="operation">
+	            	<option value="add"> + </option>
+	            	<option value="subtract"> - </option>
+	            	<option value="multiply"> * </option>
+	            	<option value="divide"> / </option>
+	            </select><br><br>
+	            <button onclick="calculate()">Calculate</button><br><br>
+			</div>
+	
+	        <p class="result"><span style="font-weight: bold;">Result: </span><span id="result"></span></p>
+		</div>	
+	</div>
 	<script src="./calculator.js"></script>
 </body>
 </html>
