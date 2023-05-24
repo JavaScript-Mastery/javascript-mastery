@@ -321,3 +321,26 @@ This repository is licensed under the MIT License.
 
 <div align="center">Made with ❤️ by <a href="https://github.com/Ajay-Dhangar" target="_blank">Ajay-Dhangar</a></div>
  -->
+ 
+ 
+ ## badge 
+ 
+ ```json
+ {
+  "@context": "https://w3id.org/openbadges/v2",
+  "type": "Assertion",
+  "id": "https://verified.cv:3000/v2/ims/80262736964452",
+  "badge": "https://verified.cv:3000/v2/ims/badgeClass/80262736964452",
+  "image": "https://verified.cv:3000/v2/ims/image/80262736964452",
+  "verification": {
+    "type": "HostedBadge"
+  },
+  "issuedOn": "2023-05-24T06:24:33.074Z",
+  "recipient": {
+    "type": "email",
+    "hashed": false,
+    "identity": "ajaydhangar49@gmail.com"
+  },
+  "evidence": []
+}
+```
