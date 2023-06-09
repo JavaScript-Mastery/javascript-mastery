@@ -1,0 +1,83 @@
+.profile {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(315deg, rgb(146, 17, 137) 3%, rgb(231, 211, 28) 38%, rgb(67, 175, 73) 68%, rgb(255, 29, 29) 98%);  
+    margin-top: 20px;
+    border-radius: 30px;
+    font-weight: 400;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  .profile-info {
+    margin-top: 20px;
+  }
+
+  .profile-info h2 {
+    margin-bottom: 10px;
+  }
+
+  .profile-info p {
+    margin-bottom: 5px;
+  }
+  h1{
+    color: #fffefd;
+    text-shadow: 4px 4px 8px #000;
+  }
+  h1, #input-form{
+    text-align: center;
+  }
+  body{
+    background-color: rgb(63, 56, 87);
+  }
+  #input-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: darkorange;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin-left: 15%;
+    box-shadow: 2px 4px 2px 4px #e020a7;
+  }
+  #label{
+    font-size: 20px;
+    margin: 10px;
+    color: #fff;
+    text-shadow: 4px 4px 8px #000;
+  }
+  #username{
+    font-size: 18px;
+    padding: 3px;
+    border-radius: 5px;
+    padding: 2px;
+    padding-left: 4px;
+    margin: 10px;
+  }
+  button{
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 2px;
+    color: #460c34;        
+    background-color: rgb(229, 255, 0);
+    text-shadow: 2px 2px 4px #ff0303;
+  }
+  footer{
+    font-size: 18px;
+    text-align: center;
+  }
+  footer p{
+    color: #fff;
+  }
+  footer p a{
+    font-size: 20px;
+    color: orangered;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px #000;
+  }
