@@ -237,7 +237,8 @@ This project provides a comprehensive learning path for beginners to advanced de
        
    
    <!-- =================  Projects ================= -->
-<!--    
+   
+   
    <h1 align="center"> Projects for checkout skills (For task) </h1>
    
    <table align="center">
@@ -262,10 +263,17 @@ This project provides a comprehensive learning path for beginners to advanced de
        <td><a href="https://github.com/JavaScript-Mastery/javascript-mastery/tree/main/Projects/project-2">Click</a></td>
        <td><a href="#">Watch</a></td>
      </tr>
+     <td>2. </td>
+       <td>GitHub User Profile</td>
+       <td><a href="https://javascript-mastery.github.io/javascript-mastery/Projects/github-api/">Click</a></td>
+       <td><a href="https://github.com/JavaScript-Mastery/javascript-mastery/tree/main/Projects/github-api/">Click</a></td>
+       <td><a href="#">Watch</a></td>
+     </tr>
    </table>  
    
    <hr /> 
-    -->
+  
+    
    <!-- =================  Interview Questions & Answers ================= -->
    
   <h1 align="center"> Interview Questions & Answers </h1>
