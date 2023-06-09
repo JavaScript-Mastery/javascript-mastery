@@ -8,7 +8,7 @@ This project provides a comprehensive learning path for beginners to advanced de
 <!-- =================  Learning Topics ================= -->
 
    - **CodeMastermindHQ:** [Click](https://codemastermindhq.vercel.app/docs/category/javascript-mastery)
-  <hr /> 
+  
   
   <h1 align="center"> Best Resources For You</h1>
   
