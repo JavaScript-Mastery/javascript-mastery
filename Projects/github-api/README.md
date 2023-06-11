@@ -1,1 +1,3 @@
 ## Using GitHub Users API
+
+This project allows users to enter a GitHub username and view the profile information of the corresponding user. The project utilizes the GitHub API to fetch data such as the user's profile image, name, bio, website link, location, followers, following, and public repositories. The fetched data is then displayed in a visually appealing format on the web page. This project serves as a simple and interactive way to explore GitHub profiles and learn more about users and their contributions. The project is implemented using HTML, CSS, and JavaScript and can be easily deployed.
