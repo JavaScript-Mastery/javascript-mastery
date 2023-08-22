@@ -253,27 +253,128 @@ per3.info.bind(obj1, 'SDE')()
 
 // Que. What is the purpose of async/await keywords?
 
+function func2(m){
+    return new Promise((res, rej)=>{
+        setTimeout(()=>{
+            console.log("use of async/await", m);
+            res();
+        }, m)
+    })
+}
+
+async function display(){
+    await func2(4000);
+    await func2(3000);
+    await func2(1000);
+    await func2(2000);
+}
+display()
 
 
 // Que. Explain prototypes
 
+function man(name, age, job) {
+    this.name = name;
+    this.age=age;
+    this.job = job
+}
+
+man.prototype.info=function(){
+    console.log(`My is ${this.name} and ${this.age} and my job title is ${this.job}.  (use of prototypes)`);
+}
+
+const Employee = new man("Shivay", 22, "SDE")
+
+Employee.info()
 
 // Que. What is prototype chain
 
-
+// Constructor function for creating a Vehicle
+function Vehicle(make) {
+    this.make = make;
+  }
+  
+  // Adding a method to the Vehicle prototype
+  Vehicle.prototype.start = function() {
+    console.log(`Starting the ${this.make} vehicle.`);
+  };
+  
+  // Creating a Car constructor that inherits from Vehicle
+  function Car(make, model) {
+    Vehicle.call(this, make);
+    this.model = model;
+  }
+  
+  // Inheriting the prototype of Vehicle
+  Car.prototype = Object.create(Vehicle.prototype);
+  
+  // Adding a method specific to Car
+  Car.prototype.drive = function() {
+    console.log(`Driving the ${this.make} ${this.model}.`);
+  };
+  
+  // Creating instances
+  const car1 = new Car('Toyota', 'Camry');
+  
+  // Accessing methods
+  car1.start(); // Output: Starting the Toyota vehicle.
+  car1.drive(); // Output: Driving the Toyota Camry.
+  
 // Que. Give an example of inheritance using function constructor
 
 
 // Que. Create a button , on click of which new Heading tag h1 should be added with text as "MERN stack" on the screen above button
 
+const btn = document.getElementById('btn');
+const heading = document.getElementById('heading');
+
+btn.addEventListener('click', ()=>{
+    const newhead = document.createElement('h1');
+    newhead.textContent = "MERN stack";
+    heading.prepend(newhead)
+})
 
 // Que. Write code to get 1st H1 element from a webpage using DOM
 
+// Assuming you have a reference to the document object
+const firstH1 = document.querySelector('h1');
+
+if (firstH1) {
+    console.log(firstH1.textContent);
+} else {
+    console.log('No <h1> element found on the page.');
+}
 
 // Que. Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second
 
+function updateTimer() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+
+    const currentTime = `${hours}:${minutes}:${seconds}`;
+    document.getElementById('timer').textContent = currentTime;
+}
+setInterval(updateTimer, 1000);
+
+updateTimer();
 
 // Que. Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy"
 
+// Get references to the elements
+const contentElement = document.getElementById('content');
+const replaceButton = document.getElementById('replaceButton');
+
+// Add a click event listener to the button
+replaceButton.addEventListener('click', function() {
+    // Change the content of the paragraph
+    contentElement.textContent = 'Welcome to Elevation academy';
+});
 
 // Que. Create an HTML page having content as Hello world and a button named "Hide Text." When user will click on this button hide the "Hello World" text
+
+function hideText() {
+    const helloText = document.getElementById("helloText");
+    helloText.style.display = "none";
+}
