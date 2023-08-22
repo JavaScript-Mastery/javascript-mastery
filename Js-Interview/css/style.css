@@ -46,6 +46,7 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 91%,
   box-shadow: 3px 3px #fd0000;
   margin-top: 50px;
   border-radius: 20px;
+  
 }
 .day-1,
 .day-2,
@@ -74,6 +75,7 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 91%,
   border-radius: 30px;
   background-color: rgb(104, 104, 222);
   color: #fff;
+  
   margin: auto 20% auto 20px;
 }
 pre {
@@ -84,4 +86,73 @@ pre {
   border-radius: 10px;
   /* overflow-x: scroll; */
   overflow: auto;
+}
+
+@media only screen and (max-width: 980px){
+  .ans1,
+.ans2,
+.ans3,
+.ans4,
+.ans5,
+.ans6,
+.ans7,
+.ans8,
+.ans9,
+.ans10,
+.ans11,
+.ans12 {
+  width: 90%; 
+  
+}
+}
+@media only screen and (max-width: 460px){
+  .ans1,
+.ans2,
+.ans3,
+.ans4,
+.ans5,
+.ans6,
+.ans7,
+.ans8,
+.ans9,
+.ans10,
+.ans11,
+.ans12 {
+  margin: auto 40% auto 10px;
+  
+}
+}
+@media only screen and (max-width: 360px){
+  .ans1,
+.ans2,
+.ans3,
+.ans4,
+.ans5,
+.ans6,
+.ans7,
+.ans8,
+.ans9,
+.ans10,
+.ans11,
+.ans12 {
+  margin: auto 40% auto 6px;
+  
+}
+}
+@media only screen and (max-width: 260px){
+  .ans1,
+.ans2,
+.ans3,
+.ans4,
+.ans5,
+.ans6,
+.ans7,
+.ans8,
+.ans9,
+.ans10,
+.ans11,
+.ans12 {
+  margin: auto 40% auto 0;
+  
+}
 }

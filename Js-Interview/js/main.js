@@ -11,6 +11,14 @@ let hello = document.querySelector(".hello-world");
 
 btn1.addEventListener("click", () => {
   hello.style.display = "none";
+  btn1.style.backgroundColor="#fcdc00";
+  btn1.style.color="#000";
+  btn4.style.backgroundColor="forestgreen";
+  btn4.style.color="#fff";
+  btn3.style.backgroundColor="forestgreen";
+  btn3.style.color="#fff";
+  btn2.style.backgroundColor="forestgreen";
+  btn2.style.color="#fff";
   btnOne();
   let day1Que1 = document.getElementById("day1Que1");
   let day1Que2 = document.getElementById("day1Que2");
@@ -741,6 +749,14 @@ cat.walk(); // Output: Whiskers is walking.
 
 btn2.addEventListener("click", () => {
   hello.style.display = "none";
+  btn2.style.backgroundColor="#fcdc00";
+  btn2.style.color="#000";
+  btn4.style.backgroundColor="forestgreen";
+  btn4.style.color="#fff";
+  btn1.style.backgroundColor="forestgreen";
+  btn1.style.color="#fff";
+  btn3.style.backgroundColor="forestgreen";
+  btn3.style.color="#fff";
   btnTwo();
 
   let day2Que1 = document.getElementById("day2Que1");
@@ -1340,6 +1356,14 @@ console.log(myValue); // Output: 0
 });
 btn3.addEventListener("click", () => {
   hello.style.display = "none";
+  btn3.style.backgroundColor="#fcdc00";
+  btn3.style.color="#000";
+  btn1.style.backgroundColor="forestgreen";
+  btn1.style.color="#fff";
+  btn2.style.backgroundColor="forestgreen";
+  btn2.style.color="#fff";
+  btn4.style.backgroundColor="forestgreen";
+  btn4.style.color="#fff";
   btnThree();
 
   let day3Que1 = document.getElementById("day3Que1");
@@ -1939,6 +1963,14 @@ if (myOtherValue === undefined) {
 });
 btn4.addEventListener("click", () => {
   hello.style.display = "none";
+  btn4.style.backgroundColor="#fcdc00";
+  btn4.style.color="#000";
+  btn3.style.backgroundColor="forestgreen";
+  btn3.style.color="#fff";
+  btn2.style.backgroundColor="forestgreen";
+  btn2.style.color="#fff";
+  btn1.style.backgroundColor="forestgreen";
+  btn1.style.color="#fff";
   btnFour();
   let day4Que1 = document.getElementById("day4Que1");
   let day4Que2 = document.getElementById("day4Que2");
