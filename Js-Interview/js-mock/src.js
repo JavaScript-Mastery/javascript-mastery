@@ -378,3 +378,23 @@ function hideText() {
     const helloText = document.getElementById("helloText");
     helloText.style.display = "none";
 }
+
+
+// ======================================================
+
+
+const orderList = document.getElementsByClassName('data')[0]; 
+
+fetch('https://api.github.com/users')
+  .then(res => res.json())
+  .then(data => render(data))
+  .catch(err => console.log(err));
+
+function render(data) {
+  data.map(item => {
+    const myList = document.createElement('li');
+    myList.textContent = item.login;
+    orderList.appendChild(myList);
+  });
+}
+
